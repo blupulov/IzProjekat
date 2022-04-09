@@ -22,6 +22,11 @@
                           rdfs:subPropertyOf :memoryProperties .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TBW
+:TBW rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf :ssdProperties .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TDP
 :TDP rdf:type owl:ObjectProperty ;
      rdfs:subPropertyOf :processorProperties .
@@ -68,6 +73,11 @@
                  rdfs:range :ChipsetType .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveInterfaceType
+:haveInterfaceType rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hddProperties .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveInternalMemoryType
 :haveInternalMemoryType rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :memoryProperties .
@@ -106,11 +116,35 @@
                      rdfs:range :ProcessorFamily .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSSDInterfaceType
+:haveSSDInterfaceType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :ssdProperties .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSocket
 :haveSocket rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :motherboardProperties ,
                                :processorProperties ;
             rdfs:range :Socket .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveWritingType
+:haveWritingType rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hddProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddCapacity
+:hddCapacity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hddProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddProperties
+:hddProperties rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddSpeed
+:hddSpeed rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hddProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#lithography
@@ -177,6 +211,15 @@
                      rdfs:domain :Processor .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdCapacity
+:ssdCapacity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :ssdProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdProperties
+:ssdProperties rdf:type owl:ObjectProperty .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#storageCapacity
 :storageCapacity rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :memoryProperties .
@@ -190,6 +233,21 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#threadsNumber
 :threadsNumber rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :processorProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#totalHDDCapacity
+:totalHDDCapacity rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hddProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf :hddProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf :ssdProperties .
 
 
 #################################################################
@@ -206,6 +264,10 @@
                           rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TBW
+:TBW rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TDP
 :TDP rdf:type owl:DatatypeProperty ;
      rdfs:range xsd:integer .
@@ -219,6 +281,14 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#coresNumber
 :coresNumber rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddCapacity
+:hddCapacity rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddSpeed
+:hddSpeed rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#lithography
@@ -277,6 +347,10 @@
 :processorProperties rdf:type owl:DatatypeProperty .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdCapacity
+:ssdCapacity rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#storageCapacity
 :storageCapacity rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:integer .
@@ -285,6 +359,18 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#threadsNumber
 :threadsNumber rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#totalHDDCapacity
+:totalHDDCapacity rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -318,6 +404,21 @@
 :Desktop rdf:type owl:Class ;
          rdfs:subClassOf :Computer ;
          owl:disjointWith :Laptop .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#HDD
+:HDD rdf:type owl:Class ;
+     rdfs:subClassOf :Storage ;
+     owl:disjointWith :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#HDDInterfaceType
+:HDDInterfaceType rdf:type owl:Class ;
+                  rdfs:subClassOf :HDDProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#HDDProperties
+:HDDProperties rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#InternalMemoryType
@@ -369,6 +470,20 @@
 :ProcessorProperties rdf:type owl:Class .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#SSD
+:SSD rdf:type owl:Class ;
+     rdfs:subClassOf :Storage .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#SSDInterfaceType
+:SSDInterfaceType rdf:type owl:Class ;
+                  rdfs:subClassOf :SSDProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#SSDProperties
+:SSDProperties rdf:type owl:Class .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Slots
 :Slots rdf:type owl:Class ;
        rdfs:subClassOf :MemoryProperties .
@@ -378,6 +493,15 @@
 :Socket rdf:type owl:Class ;
         rdfs:subClassOf :MotherboardProperties ,
                         :ProcessorProperties .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Storage
+:Storage rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#WritingType
+:WritingType rdf:type owl:Class ;
+             rdfs:subClassOf :HDDProperties .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
