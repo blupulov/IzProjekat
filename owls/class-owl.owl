@@ -54,12 +54,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveInterfaceType
 :haveInterfaceType rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :hddProperties .
+                   rdfs:subPropertyOf :hddProperties ;
+                   rdfs:range :HDDInterfaceType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveInternalMemoryType
 :haveInternalMemoryType rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :memoryProperties .
+                        rdfs:subPropertyOf :memoryProperties ;
+                        rdfs:range :InternalMemoryType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveKeybord
@@ -70,17 +72,20 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemoryChannels
 :haveMemoryChannels rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :memoryProperties .
+                    rdfs:subPropertyOf :memoryProperties ;
+                    rdfs:range :MemoryChannels .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemorySlots
 :haveMemorySlots rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :memoryProperties .
+                 rdfs:subPropertyOf :memoryProperties ;
+                 rdfs:range :Slots .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemoryType
 :haveMemoryType rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :memoryProperties .
+                rdfs:subPropertyOf :memoryProperties ;
+                rdfs:range :MemoryLayout .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMotherboard
@@ -120,7 +125,8 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSSDInterfaceType
 :haveSSDInterfaceType rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :ssdProperties .
+                      rdfs:subPropertyOf :ssdProperties ;
+                      rdfs:range :SSDInterfaceType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSocket
@@ -144,12 +150,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveWritingType
 :haveWritingType rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hddProperties .
+                 rdfs:subPropertyOf :hddProperties ;
+                 rdfs:range :WritingType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddProperties
 :hddProperties rdf:type owl:ObjectProperty ;
-               rdfs:domain :HDD .
+               rdfs:domain :HDD ,
+                           :Memory .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryProperties
@@ -174,7 +182,8 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdProperties
 :ssdProperties rdf:type owl:ObjectProperty ;
-               rdfs:domain :SSD .
+               rdfs:domain :Memory ,
+                           :SSD .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#supportMemoryType
@@ -190,19 +199,19 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#InternalMemoryCapacity
 :InternalMemoryCapacity rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf :a ;
+                        rdfs:subPropertyOf :memoryDataProperties ;
                         rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#InternalMemoryClockSpeed
 :InternalMemoryClockSpeed rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf :a ;
+                          rdfs:subPropertyOf :memoryDataProperties ;
                           rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TBW
 :TBW rdf:type owl:DatatypeProperty ;
-     rdfs:subPropertyOf :a ;
+     rdfs:subPropertyOf :ssdDataProperties ;
      rdfs:range xsd:integer .
 
 
@@ -210,10 +219,6 @@
 :TDP rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf :processorDataProperties ;
      rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#a
-:a rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#cacheMemoryCapacity
@@ -229,8 +234,8 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#connectingType
 :connectingType rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf :headphonesDataProperties ,
-                                   :keybordDataProperties ,
+                rdfs:subPropertyOf :forGaming ,
+                                   :headphonesDataProperties ,
                                    :mouseDataProperties ;
                 rdfs:range xsd:string .
 
@@ -276,13 +281,19 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddCapacity
 :hddCapacity rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf :a ;
+             rdfs:subPropertyOf :hddDataProperties ;
              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddDataProperties
+:hddDataProperties rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :HDD .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddSpeed
 :hddSpeed rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :a ;
+          rdfs:subPropertyOf :hddDataProperties ;
           rdfs:range xsd:integer .
 
 
@@ -323,13 +334,13 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#maxInternalMemory
 :maxInternalMemory rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :a ;
+                   rdfs:subPropertyOf :memoryDataProperties ;
                    rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryClockSpeed
 :memoryClockSpeed rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:subPropertyOf :memoryDataProperties ;
                   rdfs:range xsd:integer .
 
 
@@ -347,6 +358,11 @@
                              rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryDataProperties
+:memoryDataProperties rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Memory .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memorySlots
 :memorySlots rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :motherboardDataProperties ;
@@ -355,7 +371,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryVoltage
 :memoryVoltage rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :a ;
+               rdfs:subPropertyOf :memoryDataProperties ;
                rdfs:range xsd:integer .
 
 
@@ -474,8 +490,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdCapacity
 :ssdCapacity rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf :a ;
+             rdfs:subPropertyOf :ssdDataProperties ;
              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdDataProperties
+:ssdDataProperties rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :SSD .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#storageCapacity
@@ -491,7 +513,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#totalHDDCapacity
 :totalHDDCapacity rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf :a ;
+                  rdfs:subPropertyOf :hddDataProperties ;
                   rdfs:range xsd:integer .
 
 
@@ -540,13 +562,13 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed> rdf:type owl:DatatypeProperty ;
-                                                                                            rdfs:subPropertyOf :a ;
+                                                                                            rdfs:subPropertyOf :hddDataProperties ;
                                                                                             rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> rdf:type owl:DatatypeProperty ;
-                                                                                            rdfs:subPropertyOf :a ;
+                                                                                            rdfs:subPropertyOf :ssdDataProperties ;
                                                                                             rdfs:range xsd:integer .
 
 
@@ -635,6 +657,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#MemoryProperties
 :MemoryProperties rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :PeripheralDevices .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Motherboard
