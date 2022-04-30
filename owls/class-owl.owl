@@ -24,6 +24,10 @@
                     rdfs:domain :Computer .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#coolerProperties
+:coolerProperties rdf:type owl:ObjectProperty .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#graphicCardProperties
 :graphicCardProperties rdf:type owl:ObjectProperty ;
                        rdfs:domain :GraphicsCard .
@@ -74,6 +78,7 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveBrand
 :haveBrand rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :computerProperties ,
+                              :coolerProperties ,
                               :graphicCardProperties ,
                               :motherboardProperties ,
                               :peripheralDevices ,
@@ -98,6 +103,20 @@
                  rdfs:subPropertyOf :motherboardProperties ,
                                     :processorProperties ;
                  rdfs:range :ChipsetType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCooler
+:haveCooler rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :computerProperties ;
+            rdfs:domain :Computer ;
+            rdfs:range :Cooler .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCoolerType
+:haveCoolerType rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :coolerProperties ;
+                rdfs:domain :Cooler ;
+                rdfs:range :CoolerType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCraftingTechnology
@@ -782,6 +801,19 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Computer
 :Computer rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Cooler
+:Cooler rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CoolerProperties
+:CoolerProperties rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CoolerType
+:CoolerType rdf:type owl:Class ;
+            rdfs:subClassOf :CoolerProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CraftingTechnology
