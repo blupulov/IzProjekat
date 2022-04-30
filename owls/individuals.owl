@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AM4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AM4">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AM4_Gigabyte_A520M-H -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AM4_Gigabyte_A520M-H">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_A520 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_A520">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_Ryzen_5_5600G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_Ryzen_5_5600G">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_Ryzen_Processors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#AMD_Ryzen_Processors">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#ATX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#ATX">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Altos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Altos">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#DDR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#DDR4">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#DDR4_16_GB_3200_MHz_Geil_Pristine_GAP416_GB3200C22SC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#DDR4_16_GB_3200_MHz_Geil_Pristine_GAP416_GB3200C22SC">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Desktop_Altos_Lion_G5_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Desktop_Altos_Lion_G5_I">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Dual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Dual">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Fantech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Fantech">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Fantech_WG11_Cruiser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Fantech_WG11_Cruiser">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#FreeSync -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#FreeSync">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#GDDR6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#GDDR6">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#GEIL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#GEIL">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Genious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Genious">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Genious_SP-Q180G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Genious_SP-Q180G">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#HAMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#HAMA">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#IPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#IPS">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Intel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Intel">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L1">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L2">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#L3">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#LED -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#LED">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#MSI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#MSI">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#MSI_AMD_Radeon_RX_6500_XT_MECH_2X_4G_OC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#MSI_AMD_Radeon_RX_6500_XT_MECH_2X_4G_OC">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Raidmax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Raidmax">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Raidmax_RX-600XT_-_600_W -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Raidmax_RX-600XT_-_600_W">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Realtek_Audio_CODEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Realtek_Audio_CODEC">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Realtek_GbE_LAN_chip -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Realtek_GbE_LAN_chip">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#SAMSUNG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#SAMSUNG">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#SSD_2.5_SATA3_512_GB_Geil_GZ25Z3-512GP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#SSD_2.5_SATA3_512_GB_Geil_GZ25Z3-512GP">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#USB_HAMA_11288-AB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#USB_HAMA_11288-AB">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#16:9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#16:9">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#1920x1080 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#1920x1080">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#2xDIMM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#2xDIMM">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#2xSO-DIMM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#2xSO-DIMM">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#4xDIMM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#4xDIMM">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Samsung_LF22T350FHRXDU_22_FreeSync/IPS/75_Hz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13#Samsung_LF22T350FHRXDU_22_FreeSync/IPS/75_Hz">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
