@@ -13,8 +13,18 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#A320
+:A320 rdf:type owl:NamedIndividual ;
+      rdfs:comment "3 cipset" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AL897
 :AL897 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC887
+:ALC887 rdf:type owl:NamedIndividual ;
+        rdfs:comment "3 zv krt" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_B550M-HDV
@@ -28,6 +38,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD
 :AMD rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Athlon_Processors
+:AMD_Athlon_Processors rdf:type owl:NamedIndividual ;
+                       rdfs:comment "proc fam" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASRock
@@ -59,8 +74,18 @@
 :Ampere_Lite_ll rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer
+:Apacer rdf:type owl:NamedIndividual ;
+        rdfs:comment "4 brend rama" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apple
 :Apple rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Athlon_300GE
+:Athlon_300GE rdf:type owl:NamedIndividual ;
+              rdfs:comment "3 proc" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#B550
@@ -87,6 +112,16 @@
 :C750 rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CHIEFTEC
+:CHIEFTEC rdf:type owl:NamedIndividual ;
+          rdfs:comment "3 napajanje" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2
+:CNE-CMS2 rdf:type owl:NamedIndividual ;
+          rdfs:comment "3 mis" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#COOLER_MASTER
 :COOLER_MASTER rdf:type owl:NamedIndividual .
 
@@ -95,8 +130,25 @@
 :CORSAIR rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon
+:Canyon rdf:type owl:NamedIndividual ;
+        rdfs:comment "3 mis" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Corsair
 :Corsair rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4
+:DDR4 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR5
+:DDR5 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR6X
+:DDR6X rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DELL
@@ -117,8 +169,18 @@
 :EK-AIO rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH
+:EL.08G2V.GNH rdf:type owl:NamedIndividual ;
+              rdfs:comment "4 naziv rama" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EWE
 :EWE rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FCLGA1151
+:FCLGA1151 rdf:type owl:NamedIndividual ;
+           rdfs:comment "4 socket" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FCLGA1200
@@ -129,9 +191,19 @@
 :FGC-750_W rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L
+:FLC-600L rdf:type owl:NamedIndividual ;
+          rdfs:comment "4 napajanje" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Falcon
 :Falcon rdf:type owl:NamedIndividual ;
         rdfs:comment "2 brend kulera" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint
+:Flint rdf:type owl:NamedIndividual ;
+       rdfs:comment "4 racunar" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Force_Series__MP510
@@ -140,6 +212,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fractal
 :Fractal rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync
+:FreeSync rdf:type owl:NamedIndividual ;
+          rdfs:comment "4 monitior sinc" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury
@@ -176,9 +253,24 @@
 :Geil rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Genius
+:Genius rdf:type owl:NamedIndividual ;
+        rdfs:comment "4 zvucnici" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H310
+:H310 rdf:type owl:NamedIndividual ;
+      rdfs:comment "4 cipset" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HP
 :HP rdf:type owl:NamedIndividual ;
     rdfs:comment "2 bren misa" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Hama
+:Hama rdf:type owl:NamedIndividual ;
+      rdfs:comment "3 tast" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Huawei
@@ -204,6 +296,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Intel
 :Intel rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200
+:KC200 rdf:type owl:NamedIndividual ;
+       rdfs:comment "3 tast" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500
@@ -280,6 +377,15 @@
 :MateView_GT rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mikro_ATX
+:Mikro_ATX rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Motospeed
+:Motospeed rdf:type owl:NamedIndividual ;
+           rdfs:comment "4 brend misa" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NV1
 :NV1 rdf:type owl:NamedIndividual .
 
@@ -319,8 +425,28 @@
 :PHILIPS rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Patriot
+:Patriot rdf:type owl:NamedIndividual ;
+         rdfs:comment "3 brend ssd" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_E12
 :Phison_E12 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_PS5012-E12
+:Phison_PS5012-E12 rdf:type owl:NamedIndividual ;
+                   rdfs:comment "3 kontroler" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K
+:Prime_A320M-K rdf:type owl:NamedIndividual ;
+               rdfs:comment "3 mat ploca" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0
+:Prime_H310M-K_R2.0 rdf:type owl:NamedIndividual ;
+                    rdfs:comment "4 mat ploca" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prisma_AL-12
@@ -335,12 +461,21 @@
 :Pulsefire_Core_HX-MC004B rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H
+:RTL8111H rdf:type owl:NamedIndividual ;
+          rdfs:comment "3 mr krt" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
 :RX-800AC-V rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT
 :Radeon_RX_6700XT rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_Vega_3
+:Radeon_RX_Vega_3 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax
@@ -354,6 +489,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer
 :Razer rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek
+:Realtek rdf:type owl:NamedIndividual ;
+         rdfs:comment "3 brend zv i mr" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek_ALC887_codec
@@ -384,8 +524,18 @@
                rdfs:comment "2 naziv monitora" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III
+:SATA_III rdf:type owl:NamedIndividual ;
+          rdfs:comment "4 interface hard" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570
 :SN570 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280
+:SP-HF280 rdf:type owl:NamedIndividual ;
+          rdfs:comment "4 naz zvucnika" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe
@@ -393,8 +543,18 @@
                                    rdfs:comment "2 ssd" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance
+:ST1000VX008_SkyHawk_Surveillance rdf:type owl:NamedIndividual ;
+                                  rdfs:comment "4 naziv" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk
 :SanDisk rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Seagate
+:Seagate rdf:type owl:NamedIndividual ;
+         rdfs:comment "4 brend" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Motion_SM2262EN
@@ -423,12 +583,42 @@
            rdfs:comment "2 naziv racunara" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trust
+:Trust rdf:type owl:NamedIndividual ;
+       rdfs:comment "4 tastatura brend" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E
 :U3023E rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630
+:UHD_Graphics_630 rdf:type owl:NamedIndividual ;
+                  rdfs:comment "4 graficka" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40
+:V40 rdf:type owl:NamedIndividual ;
+     rdfs:comment "4 naziv misa" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA
 :VA rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE
+:VA24EHE rdf:type owl:NamedIndividual ;
+         rdfs:comment "4 naziv monitora" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8
+:Value_Series_APB-500B8 rdf:type owl:NamedIndividual ;
+                        rdfs:comment "3 napajanje naziv" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper
+:Viper rdf:type owl:NamedIndividual ;
+       rdfs:comment "3 naz sssd" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED
@@ -465,6 +655,16 @@
 :XONAR rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN
+:YSP_2010BN rdf:type owl:NamedIndividual ;
+            rdfs:comment "3 naz zvucnika" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Yenkee
+:Yenkee rdf:type owl:NamedIndividual ;
+        rdfs:comment "3 zv" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590
 :Z590 rdf:type owl:NamedIndividual .
 
@@ -474,12 +674,22 @@
              rdfs:comment "2 slusalice" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697
+:Ziva_23697 rdf:type owl:NamedIndividual ;
+            rdfs:comment "4 naziv tastature" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100
+:i3-9100 rdf:type owl:NamedIndividual ;
+         rdfs:comment "4 proc" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K
 :i9-11900K rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel®_Core_i9_Processors
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel®_Core_i9_Processors> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i9_Processors
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i9_Processors> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:10
@@ -488,6 +698,10 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#21:9
@@ -516,8 +730,8 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3440x1440> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840_x_2160
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840_x_2160> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840x2160
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840x2160> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1
@@ -526,6 +740,15 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA> rdf:type owl:NamedIndividual ;
+                                                                                  rdfs:comment "3 naz mon" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9th_Generation_Intel_Core_i3_Processors
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9th_Generation_Intel_Core_i3_Processors> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_/_M-Key
