@@ -654,7 +654,8 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#psiExpressPortNumbers
 :psiExpressPortNumbers rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf :motherboardDataProperties ,
-                                          :powerSupplyDataProperties .
+                                          :powerSupplyDataProperties ;
+                       rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#responseTime
@@ -1032,6 +1033,10 @@
                         :ProcessorProperties .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#SounCard
+:SounCard rdf:type owl:Class .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#SoundCard
 :SoundCard rdf:type owl:Class ;
            rdfs:subClassOf :MotherboardProperties .
@@ -1157,7 +1162,16 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Athlon_300GE
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Athlon_300GE> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Athlon_300GE> rdf:type :Processor ;
+                                                                                       :TDP 35 ;
+                                                                                       :cacheMemoryCapacity 4 ;
+                                                                                       :coresNumber 2 ;
+                                                                                       :lithography 14 ;
+                                                                                       :memoryClockSpeedSupportedTo 2667 ;
+                                                                                       :price 6000 ;
+                                                                                       :processorBoostFrequency 3.4 ;
+                                                                                       :processorMainFrequency 3.4 ;
+                                                                                       :threadsNumber 4 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Audio_CODEC
@@ -1201,11 +1215,17 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#C750
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#C750> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#C750> rdf:type :PowerSupply ;
+                                                                               :pin24 1 ;
+                                                                               :pin8 4 ;
+                                                                               :price 11000 ;
+                                                                               :psiExpressPortNumbers 2 ;
+                                                                               :sataConnectorsNumber 8 ;
+                                                                               :voltage 750 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CHIEFTEC
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CHIEFTEC> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CHIEFTEC> rdf:type :Brand .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16
@@ -1230,7 +1250,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CTG-750C
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CTG-750C> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CTG-750C> rdf:type :PowerSupply ;
+                                                                                   :fddFloppy 2 ;
+                                                                                   :molex 4 ;
+                                                                                   :pin24 1 ;
+                                                                                   :pin8 1 ;
+                                                                                   :price 11000 ;
+                                                                                   :psiExpressPortNumbers 2 ;
+                                                                                   :sataConnectorsNumber 6 ;
+                                                                                   :voltage 750 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon
@@ -1298,7 +1326,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FGC-750_W
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FGC-750_W> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FGC-750_W> rdf:type :PowerSupply ;
+                                                                                    :molex 2 ;
+                                                                                    :pin24 1 ;
+                                                                                    :pin8 1 ;
+                                                                                    :price 5000 ;
+                                                                                    :psiExpressPortNumbers 2 ;
+                                                                                    :sataConnectorsNumber 4 ;
+                                                                                    :voltage 750 ;
+                                                                                    rdfs:comment "dodati u individuama 80 PLUS WHITE" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L
@@ -1477,28 +1513,6 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2> rdf:type :Keybord .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16> rdf:type :Memory .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100> rdf:type :Processor .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i5-9400F
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i5-9400F> rdf:type :Processor .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i7-11700F
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i7-11700F> rdf:type :Processor .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K> rdf:type :Processor .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i7_Processors
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i7_Processors> rdf:type :ProcessorFamily .
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> rdf:type :DisplayPannel .
 
@@ -1658,6 +1672,10 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_PS5012-E12> rdf:type :Controller .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16> rdf:type :Memory .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> rdf:type :Mouse .
 
@@ -1756,19 +1774,55 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U> rdf:type :Processor ;
+                                                                                        :TDP 15 ;
+                                                                                        :cacheMemoryCapacity 4 ;
+                                                                                        :coresNumber 2 ;
+                                                                                        :lithography 14 ;
+                                                                                        :memoryClockSpeedSupportedTo 2400 ;
+                                                                                        :price 12000 ;
+                                                                                        :processorBoostFrequency 3.5 ;
+                                                                                        :processorMainFrequency 2.6 ;
+                                                                                        :threadsNumber 4 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X> rdf:type :Processor ;
+                                                                                        :TDP 65 ;
+                                                                                        :cacheMemoryCapacity 32 ;
+                                                                                        :coresNumber 6 ;
+                                                                                        :lithography 7 ;
+                                                                                        :memoryClockSpeedSupportedTo 3200 ;
+                                                                                        :price 29000 ;
+                                                                                        :processorBoostFrequency 4.6 ;
+                                                                                        :processorMainFrequency 3.7 ;
+                                                                                        :threadsNumber 12 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X> rdf:type :Processor ;
+                                                                                        :TDP 105 ;
+                                                                                        :cacheMemoryCapacity 32 ;
+                                                                                        :coresNumber 8 ;
+                                                                                        :lithography 7 ;
+                                                                                        :memoryClockSpeedSupportedTo 3200 ;
+                                                                                        :price 42000 ;
+                                                                                        :processorBoostFrequency 4.7 ;
+                                                                                        :processorMainFrequency 3.8 ;
+                                                                                        :threadsNumber 16 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X> rdf:type :Processor ;
+                                                                                        :TDP 105 ;
+                                                                                        :cacheMemoryCapacity 64 ;
+                                                                                        :coresNumber 12 ;
+                                                                                        :lithography 7 ;
+                                                                                        :memoryClockSpeedSupportedTo 3200 ;
+                                                                                        :price 70000 ;
+                                                                                        :processorBoostFrequency 4.8 ;
+                                                                                        :processorMainFrequency 3.7 ;
+                                                                                        :threadsNumber 24 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc
@@ -1955,8 +2009,60 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zotac> rdf:type :Brand .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100> rdf:type :Processor ;
+                                                                                  :TDP 65 ;
+                                                                                  :cacheMemoryCapacity 6 ;
+                                                                                  :coresNumber 4 ;
+                                                                                  :lithography 14 ;
+                                                                                  :price 12000 ;
+                                                                                  :processorBoostFrequency 4.2 ;
+                                                                                  :processorMainFrequency 3.6 ;
+                                                                                  :threadsNumber 4 .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i5-9400F
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i5-9400F> rdf:type :Processor ;
+                                                                                   :cacheMemoryCapacity 65 ,
+                                                                                                        9 ;
+                                                                                   :coresNumber 6 ;
+                                                                                   :lithography 14 ;
+                                                                                   :price 16000 ;
+                                                                                   :processorBoostFrequency 4.1 ;
+                                                                                   :processorMainFrequency 2.9 ;
+                                                                                   :threadsNumber 6 .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i7-11700F
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i7-11700F> rdf:type :Processor ;
+                                                                                    :TDP 65 ;
+                                                                                    :cacheMemoryCapacity 16 ;
+                                                                                    :coresNumber 8 ;
+                                                                                    :lithography 14 ;
+                                                                                    :price 31000 ;
+                                                                                    :processorBoostFrequency 4.9 ;
+                                                                                    :processorMainFrequency 2.5 ;
+                                                                                    :threadsNumber 16 .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K> rdf:type :Processor ;
+                                                                                    :TDP 125 ;
+                                                                                    :cacheMemoryCapacity 16 ;
+                                                                                    :coresNumber 8 ;
+                                                                                    :lithography 14 ;
+                                                                                    :price 55000 ;
+                                                                                    :processorBoostFrequency 5.3 ;
+                                                                                    :processorMainFrequency 3.5 ;
+                                                                                    :threadsNumber 16 .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#nJoy
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#nJoy> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i7_Processors
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i7_Processors> rdf:type :ProcessorFamily .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i9_Processors
@@ -2035,15 +2141,17 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9th_Generation_Intel_Core_i5_Processors> rdf:type :ProcessorFamily .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Dual
-:Dual rdf:type owl:NamedIndividual ,
-               :MemoryChannels .
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_/_M-Key
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_/_M-Key> rdf:type :SSDInterfaceType .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Dual
+:Dual rdf:type owl:NamedIndividual ,
+               :MemoryChannels .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
