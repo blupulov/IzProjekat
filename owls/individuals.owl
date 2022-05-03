@@ -13,9 +13,17 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#A-Data
+:A-Data rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#A320
 :A320 rdf:type owl:NamedIndividual ;
       rdfs:comment "3 cipset" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AD4S32008G22-SGN
+:AD4S32008G22-SGN rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AL897
@@ -48,6 +56,22 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Athlon_Processors
 :AMD_Athlon_Processors rdf:type owl:NamedIndividual ;
                        rdfs:comment "proc fam" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_3_Desktop_Processors
+:AMD_Ryzen_3_Desktop_Processors rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_5_Desktop_Processors
+:AMD_Ryzen_5_Desktop_Processors rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_7_Desktop_Processors
+:AMD_Ryzen_7_Desktop_Processors rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_9_Desktop_Processors
+:AMD_Ryzen_9_Desktop_Processors rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AORUS_ELITE
@@ -103,6 +127,10 @@
              rdfs:comment "5 zv kart" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#B450
+:B450 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#B550
 :B550 rdf:type owl:NamedIndividual .
 
@@ -145,6 +173,10 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CHIEFTEC
 :CHIEFTEC rdf:type owl:NamedIndividual ;
           rdfs:comment "3 napajanje" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16
+:CL16 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2
@@ -224,6 +256,10 @@
 :EWE rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S
+:EX2710S rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ethernet_Chip
 :Ethernet_Chip rdf:type owl:NamedIndividual ;
                rdfs:comment "5 mr kartica" .
@@ -274,6 +310,10 @@
 :Fury rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1
+:G-Master_G2470HSU-B1 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync
 :G-sync rdf:type owl:NamedIndividual .
 
@@ -305,6 +345,10 @@
 :G_Pro_X_Superlight rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gaming_X
+:Gaming_X rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super
 :GeForce_RTX_2060_Super rdf:type owl:NamedIndividual .
 
@@ -318,8 +362,16 @@
 :GeForce_RTX_3070 rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080
+:GeForce_RTX_3080 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Geil
 :Geil rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gembird
+:Gembird rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Genius
@@ -345,6 +397,10 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H410M_S2H_V3_G10
 :H410M_S2H_V3_G10 rdf:type owl:NamedIndividual ;
                   rdfs:comment "5 mat ploca" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HDD01423
+:HDD01423 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018
@@ -379,6 +435,10 @@
 :IPS rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Iiyama
+:Iiyama rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite
 :Infinity_Lite rdf:type owl:NamedIndividual .
 
@@ -390,6 +450,10 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#JBL
 :JBL rdf:type owl:NamedIndividual ;
      rdfs:comment "5 brend slusalice" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81
+:KB-R81 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200
@@ -480,6 +544,10 @@
 :MSI rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R
+:MUSG-001-R rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard
 :Magic_keyboard rdf:type owl:NamedIndividual .
 
@@ -503,6 +571,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mikro_ATX
 :Mikro_ATX rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mission
+:Mission rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mobvoi
+:Mobvoi rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Motospeed
@@ -536,6 +612,10 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600
 :Omen_600 rdf:type owl:NamedIndividual ;
           rdfs:comment "2 naziv misa" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA
+:Omen_6CL96AA rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCI_Express_3.0
@@ -578,6 +658,10 @@
                rdfs:comment "3 mat ploca" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II
+:Prime_B450M-K_II rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0
 :Prime_H310M-K_R2.0 rdf:type owl:NamedIndividual ;
                     rdfs:comment "4 mat ploca" .
@@ -599,6 +683,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B
 :Pulsefire_Core_HX-MC004B rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W
+:Q_500W rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100
@@ -628,6 +716,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 :Radeon_RX_Vega_3 rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_Vega_3
+:Radeon_Vega_3 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax
 :Raidmax rdf:type owl:NamedIndividual .
 
@@ -635,6 +727,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W
 :Raidmax_Vortex_White_RX-800AC-V_-_800_W rdf:type owl:NamedIndividual ;
                                          rdfs:comment "2 napajanje" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage
+:Rampage rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer
@@ -660,6 +756,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 :Rog_Scope_RX rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U
+:Ryzen_3_3200U rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X
 :Ryzen_5_5600X rdf:type owl:NamedIndividual .
 
@@ -667,6 +767,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X
 :Ryzen_7_5800X rdf:type owl:NamedIndividual ;
                rdfs:comment "2 procesor" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X
+:Ryzen_9_5900X rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc
@@ -677,6 +781,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III
 :SATA_III rdf:type owl:NamedIndividual ;
           rdfs:comment "4 interface hard" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120
+:SEP_120 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570
@@ -716,6 +824,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
          rdfs:comment "4 brend" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sencor
+:Sencor rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Motion_SM2262EN
 :Silicon_Motion_SM2262EN rdf:type owl:NamedIndividual ;
                          rdfs:comment "2 ssd-controller dodati" .
@@ -736,6 +848,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TN
 :TN rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice
+:TicPods_2_Pro_Ice rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3
@@ -807,6 +923,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 :Western_Digital rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06
+:X06 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570
 :X570 rdf:type owl:NamedIndividual ;
       rdfs:comment "2 cipset" .
@@ -824,6 +944,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 :XONAR rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Xwave
+:Xwave rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN
 :YSP_2010BN rdf:type owl:NamedIndividual ;
             rdfs:comment "3 naz zvucnika" .
@@ -836,6 +960,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590
 :Z590 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
+:ZBOX_CA621 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1
