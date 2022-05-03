@@ -25,7 +25,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#coolerProperties
-:coolerProperties rdf:type owl:ObjectProperty .
+:coolerProperties rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Cooler .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#graphicCardProperties
@@ -80,9 +81,11 @@
            rdfs:subPropertyOf :computerProperties ,
                               :coolerProperties ,
                               :graphicCardProperties ,
+                              :hddProperties ,
                               :motherboardProperties ,
                               :peripheralDevices ,
-                              :powerSupplyProperties ;
+                              :powerSupplyProperties ,
+                              :ssdProperties ;
            rdfs:range :Brand .
 
 
@@ -103,6 +106,12 @@
                  rdfs:subPropertyOf :motherboardProperties ,
                                     :processorProperties ;
                  rdfs:range :ChipsetType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveController
+:haveController rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :ssdProperties ;
+                rdfs:range :Controller .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCooler
@@ -666,6 +675,12 @@
             rdfs:range xsd:string .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#slotsTaken
+:slotsTaken rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :memoryDataProperties ;
+            rdfs:range xsd:integer .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#speakersDataProperties
 :speakersDataProperties rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :peripheralDevicesDataProperties ;
@@ -801,6 +816,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Computer
 :Computer rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Controller
+:Controller rdf:type owl:Class ;
+            rdfs:subClassOf :SSDProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Cooler
