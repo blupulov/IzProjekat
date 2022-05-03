@@ -1049,8 +1049,476 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> rdf:type :DisplayPannel .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LENOVO
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LENOVO> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LG
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LG> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LOGITECH
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LOGITECH> rdf:type :Brand ;
+                                                                                   owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech> .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_2280
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_2280> rdf:type :SSDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK> rdf:type :Motherboard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARSHALL
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARSHALL> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARVO
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARVO> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730> rdf:type :Keybord .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard> rdf:type :Keybord .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_Lite_240
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_Lite_240> rdf:type :Cooler .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_ML120L_V2_RGB
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_ML120L_V2_RGB> rdf:type :Cooler .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mikro_ATX
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mikro_ATX> rdf:type :MotherboardFormat .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mission
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mission> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mobvoi
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mobvoi> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Motospeed
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Motospeed> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NV1
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NV1> rdf:type :SSD ;
+                                                                              owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1> .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA_GeForce_RTX_3080
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA_GeForce_RTX_3080> rdf:type :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1> rdf:type :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NZXT
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NZXT> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCI_Express_3.0
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCI_Express_3.0> rdf:type :SSDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCIe_3.0
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCIe_3.0> rdf:type :SSDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCIe_NVMe
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCIe_NVMe> rdf:type :SSDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PHILIPS
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PHILIPS> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Patriot
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Patriot> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_E12
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_E12> rdf:type :Controller ;
+                                                                                     owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_PS5012-E12> .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_PS5012-E12
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Phison_PS5012-E12> rdf:type :Controller .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K> rdf:type :Motherboard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II> rdf:type :Motherboard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> rdf:type :Motherboard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prisma_AL-12
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prisma_AL-12> rdf:type :Cooler .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC> rdf:type :Memory .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X> rdf:type :Desktop .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100> rdf:type :Headphones .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H> rdf:type :NetworkCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560> rdf:type :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT> rdf:type :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_Vega_3
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_Vega_3> rdf:type :GraphicsCard ;
+                                                                                           owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_Vega_3> .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_Vega_3
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_Vega_3> rdf:type :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek_ALC887_codec
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek_ALC887_codec> rdf:type :SounCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Redragon
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Redragon> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX> rdf:type :Keybord .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U> rdf:type :Processor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X> rdf:type :Processor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X> rdf:type :Processor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_9_5900X> rdf:type :Processor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III> rdf:type :HDDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120> rdf:type :Headphones .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570> rdf:type :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SODIMM
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SODIMM> rdf:type :Slots .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> rdf:type :Speakers .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28> rdf:type :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe> rdf:type :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> rdf:type :HDD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk> rdf:type :Processor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Seagate
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Seagate> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sencor
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sencor> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Motion_SM2262EN
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Motion_SM2262EN> rdf:type :Controller .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Power
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Silicon_Power> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sony
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sony> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Strix_RAID_DLX_7.1
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Strix_RAID_DLX_7.1> rdf:type :SounCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TN
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TN> rdf:type :DisplayType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice> rdf:type :Headphones .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3> rdf:type :Desktop .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I> rdf:type :Desktop .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trust
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trust> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630> rdf:type :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> rdf:type :Mouse .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA> rdf:type :DisplayType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> rdf:type :Monitor .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper> rdf:type :SSD .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED> rdf:type :DisplayPannel .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3> rdf:type :Headphones .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Water
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Water> rdf:type :CoolerType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Western_Digital
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Western_Digital> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06> rdf:type :Keybord .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570> rdf:type :ChipsetType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus> rdf:type :PowerSupply .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator> rdf:type :Memory .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XONAR
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XONAR> rdf:type :SounCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Xwave
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Xwave> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN> rdf:type :Speakers .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Yenkee
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Yenkee> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590> rdf:type :ChipsetType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621> rdf:type :Desktop .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1> rdf:type :Headphones .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697> rdf:type :Keybord .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zotac
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zotac> rdf:type :Brand .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#nJoy
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#nJoy> rdf:type :Brand .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i9_Processors
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#11th_Generation_Intel_Core_i9_Processors> rdf:type :ProcessorFamily .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_/_M-Key
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M.2_/_M-Key> rdf:type :SSDInterfaceType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+> rdf:type :PowerSupply .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
