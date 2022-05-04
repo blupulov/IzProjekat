@@ -337,12 +337,6 @@
                         rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#InternalMemoryClockSpeed
-:InternalMemoryClockSpeed rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf :memoryDataProperties ;
-                          rdfs:range xsd:integer .
-
-
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#TBW
 :TBW rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf :ssdDataProperties ;
@@ -385,8 +379,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#connectingType
 :connectingType rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf :forGaming ,
-                                   :headphonesDataProperties ,
+                rdfs:subPropertyOf :headphonesDataProperties ,
                                    :mouseDataProperties ;
                 rdfs:range xsd:string .
 
@@ -508,7 +501,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#maxInternalMemory
 :maxInternalMemory rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :memoryDataProperties ;
+                   rdfs:subPropertyOf :motherboardDataProperties ;
                    rdfs:range xsd:integer .
 
 
@@ -516,13 +509,6 @@
 :memoryClockSpeed rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :memoryDataProperties ;
                   rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryClockSpeedSupportedFrom
-:memoryClockSpeedSupportedFrom rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf :motherboardDataProperties ,
-                                                  :processorDataProperties ;
-                               rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryClockSpeedSupportedTo
@@ -685,7 +671,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#slotsTaken
 :slotsTaken rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf :memoryDataProperties ;
+            rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:range xsd:integer .
 
 
@@ -1094,11 +1080,30 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_B550M-HDV
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_B550M-HDV> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_B550M-HDV> rdf:type :Motherboard ;
+                                                                                        :hdmiNumbers 1 ;
+                                                                                        :maxInternalMemory 64 ;
+                                                                                        :memorySlots 2 ;
+                                                                                        :price 10000 ;
+                                                                                        :rj-45portNumbers 1 ;
+                                                                                        :sataConnectorsNumber 4 ;
+                                                                                        :usb2.0Family 4 ;
+                                                                                        :usb3.0Family 5 ;
+                                                                                        :xslot1 1 ;
+                                                                                        :xslot16 2 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_X570_GAMING_X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_X570_GAMING_X> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_X570_GAMING_X> rdf:type :Motherboard ;
+                                                                                            :hdmiNumbers 1 ;
+                                                                                            :maxInternalMemory 128 ;
+                                                                                            :memorySlots 4 ;
+                                                                                            :price 19000 ;
+                                                                                            :sataConnectorsNumber 6 ;
+                                                                                            :usb2.0Family 4 ;
+                                                                                            :usb3.0Family 6 ;
+                                                                                            :xslot1 3 ;
+                                                                                            :xslot16 2 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD
@@ -1126,7 +1131,17 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AORUS_ELITE
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AORUS_ELITE> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AORUS_ELITE> rdf:type :Motherboard ;
+                                                                                      :hdmiNumbers 1 ;
+                                                                                      :maxInternalMemory 128 ;
+                                                                                      :memorySlots 2 ;
+                                                                                      :price 20000 ;
+                                                                                      :rj-45portNumbers 1 ;
+                                                                                      :sataConnectorsNumber 4 ;
+                                                                                      :usb2.0Family 6 ;
+                                                                                      :usb3.0Family 4 ;
+                                                                                      :xslot1 1 ;
+                                                                                      :xslot16 4 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASRock
@@ -1135,10 +1150,6 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS> rdf:type :Brand .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ATX
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ATX> rdf:type :Motherboard .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS
@@ -1457,7 +1468,16 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gaming_X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gaming_X> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gaming_X> rdf:type :Motherboard ;
+                                                                                   :hdmiNumbers 1 ;
+                                                                                   :maxInternalMemory 128 ;
+                                                                                   :memorySlots 4 ;
+                                                                                   :price 18000 ;
+                                                                                   :sataConnectorsNumber 6 ;
+                                                                                   :usb2.0Family 4 ;
+                                                                                   :usb3.0Family 6 ;
+                                                                                   :xslot1 3 ;
+                                                                                   :xslot16 2 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super
@@ -1533,7 +1553,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018> rdf:type :Headphones ;
+                                                                                 :connectingType "USB" ;
+                                                                                 :forGaming "true"^^xsd:boolean ;
+                                                                                 :frequencyRangeFrom 20 ;
+                                                                                 :frequencyRangeTo 20000 ;
+                                                                                 :haveMichrophone "true"^^xsd:boolean ;
+                                                                                 :price 5000 ;
+                                                                                 :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HP
@@ -1603,7 +1630,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken> rdf:type :Headphones ;
+                                                                                 :connectingType "USB" ;
+                                                                                 :forGaming "true"^^xsd:boolean ;
+                                                                                 :frequencyRangeFrom 12 ;
+                                                                                 :frequencyRangeTo 28000 ;
+                                                                                 :haveMichrophone "true"^^xsd:boolean ;
+                                                                                 :price 12000 ;
+                                                                                 :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2
@@ -1699,7 +1733,29 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Headphones ;
+                                                                                        :connectingType "3,5" ,
+                                                                                                        "Bluetooth" ;
+                                                                                        :forGaming "false"^^xsd:boolean ;
+                                                                                        :frequencyRangeFrom 20 ;
+                                                                                        :frequencyRangeTo "20 000" ;
+                                                                                        :haveMichrophone "false"^^xsd:boolean ,
+                                                                                                         "true"^^xsd:boolean ;
+                                                                                        :price "35 000" .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690> rdf:type :Motherboard ;
+                                                                                   :displayPortNumbers 1 ;
+                                                                                   :hdmiNumbers 1 ;
+                                                                                   :maxInternalMemory 128 ;
+                                                                                   :memorySlots 4 ;
+                                                                                   :price 40000 ;
+                                                                                   :sataConnectorsNumber 6 ;
+                                                                                   :usb2.0Family 8 ;
+                                                                                   :usb3.0Family 9 ;
+                                                                                   :xslot1 1 ;
+                                                                                   :xslot16 3 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI
@@ -1927,7 +1983,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100> rdf:type :Headphones ;
+                                                                                      :connectingType "3,5" ;
+                                                                                      :forGaming "false"^^xsd:boolean ;
+                                                                                      :frequencyRangeFrom 20 ;
+                                                                                      :frequencyRangeTo "20 000" ;
+                                                                                      :price "5 500" ;
+                                                                                      :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H
@@ -2073,7 +2135,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120> rdf:type :Headphones ;
+                                                                                  :connectingType "3,5" ;
+                                                                                  :forGaming "false"^^xsd:boolean ;
+                                                                                  :frequencyRangeFrom 20 ;
+                                                                                  :frequencyRangeTo "20 000" ;
+                                                                                  :haveMichrophone "true"^^xsd:boolean ;
+                                                                                  :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570
@@ -2089,7 +2157,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> rdf:type :Speakers .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> rdf:type :Speakers ;
+                                                                                   :frequencyRangeFrom 100 ;
+                                                                                   :frequencyRangeTo 20000 ;
+                                                                                   :power 6 ;
+                                                                                   :price 1890 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28
@@ -2148,7 +2220,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice> rdf:type :Headphones ;
+                                                                                            :connectingType "Bluetooth" ;
+                                                                                            :forGaming "false"^^xsd:boolean ;
+                                                                                            :frequencyRangeFrom 20 ;
+                                                                                            :frequencyRangeTo 20000 ;
+                                                                                            :haveMichrophone "true"^^xsd:boolean ;
+                                                                                            :price 17000 ;
+                                                                                            :waterResistance "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3
@@ -2227,7 +2306,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3> rdf:type :Headphones ;
+                                                                                     :connectingType "Bluetooth" ;
+                                                                                     :forGaming "false"^^xsd:boolean ;
+                                                                                     :frequencyRangeFrom 20 ;
+                                                                                     :frequencyRangeTo 20000 ;
+                                                                                     :haveMichrophone "true"^^xsd:boolean ;
+                                                                                     :price 25000 ;
+                                                                                     :waterResistance "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Water
@@ -2278,7 +2364,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN> rdf:type :Speakers .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN> rdf:type :Speakers ;
+                                                                                     :frequencyRangeFrom 50 ;
+                                                                                     :frequencyRangeTo 20000 ;
+                                                                                     :power 5 ;
+                                                                                     :price 1300 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Yenkee
@@ -2294,7 +2384,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1> rdf:type :Headphones ;
+                                                                                      :connectingType "3,5" ;
+                                                                                      :forGaming "true"^^xsd:boolean ;
+                                                                                      :frequencyRangeFrom 20 ;
+                                                                                      :frequencyRangeTo 20000 ;
+                                                                                      :haveMichrophone "true"^^xsd:boolean ;
+                                                                                      :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697
@@ -2426,7 +2522,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700> rdf:type :Headphones .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700> rdf:type :Headphones ;
+                                                                              :connectingType 3.5 ;
+                                                                              :forGaming "false"^^xsd:boolean ;
+                                                                              :frequencyRangeFrom 20 ;
+                                                                              :frequencyRangeTo 20000 ;
+                                                                              :haveMichrophone "true"^^xsd:boolean ;
+                                                                              :price "38 000" ;
+                                                                              :waterResistance "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#80_Plus_Bronze
