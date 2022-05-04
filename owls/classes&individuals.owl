@@ -1074,7 +1074,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AD4S32008G22-SGN
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AD4S32008G22-SGN> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AD4S32008G22-SGN> rdf:type :Memory ;
+                                                                                           :InternalMemoryCapacity 8 ;
+                                                                                           :memoryClockSpeed 3200 ;
+                                                                                           :memoryVoltage 1.2 ;
+                                                                                           :price 4500 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AL897
@@ -1199,7 +1203,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Beast_RGB
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Beast_RGB> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Beast_RGB> rdf:type :Memory ;
+                                                                                    :InternalMemoryCapacity 16 ;
+                                                                                    :memoryClockSpeed 3600 ;
+                                                                                    :memoryVoltage 1.35 ;
+                                                                                    :price 12500 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BenQ
@@ -1229,11 +1237,22 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16> rdf:type :Memory ;
+                                                                               owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16> ;
+                                                                               :InternalMemoryCapacity 8 ;
+                                                                               :memoryClockSpeed 3200 ;
+                                                                               :memoryVoltage 1.35 ;
+                                                                               :price 6000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2> rdf:type :Mouse ;
+                                                                                   :connectingType "usb" ;
+                                                                                   :forGaming "false"^^xsd:boolean ;
+                                                                                   :mouseResolution 5000 ;
+                                                                                   :price 700 ;
+                                                                                   :sensorType "opticki" ;
+                                                                                   :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#COOLER_MASTER
@@ -1246,7 +1265,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US> rdf:type :Keybord ;
+                                                                                            :forGaming "false"^^xsd:boolean ;
+                                                                                            :keyboardType "Bezicna" ;
+                                                                                            :palmSupport "false"^^xsd:boolean ;
+                                                                                            :price 25000 ;
+                                                                                            :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CTG-750C
@@ -1294,7 +1318,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH> rdf:type :Memory ;
+                                                                                       :InternalMemoryCapacity 8 ;
+                                                                                       :memoryClockSpeed 2666 ;
+                                                                                       :memoryVoltage 1.2 ;
+                                                                                       :price 5400 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK
@@ -1302,7 +1330,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI> rdf:type :Keybord ;
+                                                                                         :forGaming "true"^^xsd:boolean ;
+                                                                                         :keyboardType "zicna" ;
+                                                                                         :palmSupport "false"^^xsd:boolean ;
+                                                                                         :price 10000 ;
+                                                                                         :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EWE
@@ -1338,7 +1371,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L> rdf:type :PowerSupply ;
+                                                                                   :fddFloppy 1 ;
+                                                                                   :molex 3 ;
+                                                                                   :pin24 1 ;
+                                                                                   :pin8 1 ;
+                                                                                   :price 4000 ;
+                                                                                   :sataConnectorsNumber 4 ;
+                                                                                   :voltage 600 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Falcon
@@ -1394,7 +1434,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight> rdf:type :Mouse ;
+                                                                                             :connectingType "usb" ;
+                                                                                             :forGaming "true"^^xsd:boolean ;
+                                                                                             :mouseResolution 25400 ;
+                                                                                             :price 20000 ;
+                                                                                             :sensorType "opticki" ;
+                                                                                             :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gaming_X
@@ -1442,7 +1488,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H410M_S2H_V3_G10
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H410M_S2H_V3_G10> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H410M_S2H_V3_G10> rdf:type :Motherboard ;
+                                                                                           :memoryClockSpeedSupportedTo 3000 ;
+                                                                                           :memorySlots 4 ;
+                                                                                           :price 10000 ;
+                                                                                           :sataConnectorsNumber 4 ;
+                                                                                           :usb2.0Family 4 ;
+                                                                                           :usb3.0Family 2 ;
+                                                                                           :xslot1 1 ;
+                                                                                           :xslot16 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HDD01423
@@ -1490,11 +1544,21 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81> rdf:type :Keybord ;
+                                                                                 :forGaming "true"^^xsd:boolean ;
+                                                                                 :keyboardType "zican" ;
+                                                                                 :palmSupport "true"^^xsd:boolean ;
+                                                                                 :price 7500 ;
+                                                                                 :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200> rdf:type :Keybord ;
+                                                                                :forGaming "false"^^xsd:boolean ;
+                                                                                :keyboardType "zicna" ;
+                                                                                :palmSupport "false"^^xsd:boolean ;
+                                                                                :price 1300 ;
+                                                                                :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500
@@ -1510,7 +1574,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2> rdf:type :Keybord ;
+                                                                                        :forGaming "true"^^xsd:boolean ;
+                                                                                        :keyboardType "zicna" ;
+                                                                                        :palmSupport "false"^^xsd:boolean ;
+                                                                                        :price 7000 ;
+                                                                                        :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED
@@ -1535,7 +1604,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed> rdf:type :Mouse ;
+                                                                                     :connectingType "usb" ;
+                                                                                     :forGaming "true"^^xsd:boolean ;
+                                                                                     :mouseResolution 16000 ;
+                                                                                     :price 13000 ;
+                                                                                     :sensorType "opticki" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech
@@ -1547,11 +1621,28 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite> rdf:type :Mouse ;
+                                                                                        :connectingType "usb" ;
+                                                                                        :forGaming "true"^^xsd:boolean ;
+                                                                                        :mouseResolution 18000 ;
+                                                                                        :price 10500 ;
+                                                                                        :sensorType "opticki" ;
+                                                                                        :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK> rdf:type :Motherboard ;
+                                                                                            :displayPortNumbers 1 ;
+                                                                                            :hdmiNumbers 1 ;
+                                                                                            :memoryClockSpeedSupportedTo 5200 ;
+                                                                                            :memorySlots 4 ;
+                                                                                            :pin24 1 ;
+                                                                                            :pin4 4 ;
+                                                                                            :pin8 1 ;
+                                                                                            :price 24000 ;
+                                                                                            :sataConnectorsNumber 6 ;
+                                                                                            :usb2.0Family 6 ;
+                                                                                            :usb3.0Family 7 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARSHALL
@@ -1563,7 +1654,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730> rdf:type :Keybord ;
+                                                                                :forGaming "true"^^xsd:boolean ;
+                                                                                :keyboardType "zicna" ;
+                                                                                :palmSupport "true"^^xsd:boolean ;
+                                                                                :price 24000 ;
+                                                                                :waterResistance "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC
@@ -1575,15 +1671,31 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R> rdf:type :Mouse ;
+                                                                                     :connectingType "usb" ;
+                                                                                     :forGaming "true"^^xsd:boolean ;
+                                                                                     :mouseResolution 2400 ;
+                                                                                     :price 800 ;
+                                                                                     :sensorType "opticki" ;
+                                                                                     :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard> rdf:type :Keybord ;
+                                                                                         :forGaming "false"^^xsd:boolean ;
+                                                                                         :keyboardType "bezicna" ;
+                                                                                         :palmSupport "false"^^xsd:boolean ;
+                                                                                         :price 10000 ;
+                                                                                         :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3> rdf:type :Mouse ;
+                                                                                        :connectingType "Bluetooth" ;
+                                                                                        :forGaming "false"^^xsd:boolean ;
+                                                                                        :price 12500 ;
+                                                                                        :sensorType "opticki" ;
+                                                                                        :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_Lite_240
@@ -1636,11 +1748,23 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600> rdf:type :Mouse ;
+                                                                                   :connectingType "usb" ;
+                                                                                   :forGaming "true"^^xsd:boolean ;
+                                                                                   :mouseResolution 12000 ;
+                                                                                   :price 6000 ;
+                                                                                   :sensorType "opticki" ;
+                                                                                   :waterResistance "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA> rdf:type :Mouse ;
+                                                                                       :connectingType "usb" ;
+                                                                                       :forGaming "true"^^xsd:boolean ;
+                                                                                       :mouseResolution 16000 ;
+                                                                                       :price 12000 ;
+                                                                                       :sensorType "opticki" ;
+                                                                                       :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#PCI_Express_3.0
@@ -1677,19 +1801,53 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> rdf:type :Mouse ;
+                                                                                          :connectingType "usb" ;
+                                                                                          :forGaming "false"^^xsd:boolean ;
+                                                                                          :mouseResolution 1600 ;
+                                                                                          :price 10000 ;
+                                                                                          :sensorType "opticki" ;
+                                                                                          :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_A320M-K> rdf:type :Motherboard ;
+                                                                                        :memoryClockSpeedSupportedTo 3200 ;
+                                                                                        :memorySlots 2 ;
+                                                                                        :price 6000 ;
+                                                                                        :sataConnectorsNumber 4 ;
+                                                                                        :usb2.0Family 2 ;
+                                                                                        :usb3.0Family 5 ;
+                                                                                        :xslot1 1 ;
+                                                                                        :xslot16 2 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II> rdf:type :Motherboard ;
+                                                                                           :hdmiNumbers 1 ;
+                                                                                           :memoryClockSpeedSupportedTo 4400 ;
+                                                                                           :memorySlots 2 ;
+                                                                                           :pin24 1 ;
+                                                                                           :pin8 1 ;
+                                                                                           :price 7500 ;
+                                                                                           :rj-45portNumbers 1 ;
+                                                                                           :sataConnectorsNumber 4 ;
+                                                                                           :usb2.0Family 2 ;
+                                                                                           :usb3.0Family 4 ;
+                                                                                           :xslot16 3 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> rdf:type :Motherboard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> rdf:type :Motherboard ;
+                                                                                             :memoryClockSpeedSupportedTo 2666 ;
+                                                                                             :memorySlots 2 ;
+                                                                                             :price 7000 ;
+                                                                                             :rj-45portNumbers 1 ;
+                                                                                             :sataConnectorsNumber 4 ;
+                                                                                             :usb2.0Family 2 ;
+                                                                                             :usb3.0Family 2 ;
+                                                                                             :xslot1 2 ;
+                                                                                             :xslot16 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prisma_AL-12
@@ -1697,7 +1855,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC> rdf:type :Memory ;
+                                                                                                     :InternalMemoryCapacity 16 ;
+                                                                                                     :memoryClockSpeed 3200 ;
+                                                                                                     :memoryVoltage 1.2 ;
+                                                                                                     :price 9500 ;
+                                                                                                     rdfs:comment "DODATI LATENCIJU KAO KLASU U MEMORIJI" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X
@@ -1705,11 +1868,23 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B> rdf:type :Mouse ;
+                                                                                                   :connectingType "usb" ;
+                                                                                                   :forGaming "true"^^xsd:boolean ;
+                                                                                                   :mouseResolution 6200 ;
+                                                                                                   :price 4000 ;
+                                                                                                   :sensorType "opticki" ;
+                                                                                                   :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W> rdf:type :PowerSupply ;
+                                                                                 :fddFloppy 1 ;
+                                                                                 :molex 2 ;
+                                                                                 :pin24 1 ;
+                                                                                 :pin4 1 ;
+                                                                                 :sataConnectorsNumber 3 ;
+                                                                                 :voltage 500 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100
@@ -1721,7 +1896,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> rdf:type :PowerSupply ;
+                                                                                     owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560
@@ -1746,7 +1922,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> rdf:type :PowerSupply ;
+                                                                                                                  :molex 3 ;
+                                                                                                                  :pin24 1 ;
+                                                                                                                  :pin8 1 ;
+                                                                                                                  :price 8500 ;
+                                                                                                                  :psiExpressPortNumbers 2 ;
+                                                                                                                  :sataConnectorsNumber 6 ;
+                                                                                                                  :voltage 800 ;
+                                                                                                                  rdfs:comment "80 Plus dodati" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage
@@ -1770,7 +1954,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX> rdf:type :Keybord ;
+                                                                                       :forGaming "true"^^xsd:boolean ;
+                                                                                       :keyboardType "zicna" ;
+                                                                                       :palmSupport "false"^^xsd:boolean ;
+                                                                                       :price 14000 ;
+                                                                                       :waterResistance "flase" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U
@@ -1922,7 +2111,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> rdf:type :Mouse ;
+                                                                              :connectingType "usb" ;
+                                                                              :forGaming "true"^^xsd:boolean ;
+                                                                              :mouseResolution 4000 ;
+                                                                              :price 2000 ;
+                                                                              :sensorType "opticki" ;
+                                                                              :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA
@@ -1934,7 +2129,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8> rdf:type :PowerSupply ;
+                                                                                                 :fddFloppy 1 ;
+                                                                                                 :pin24 1 ;
+                                                                                                 :pin8 1 ;
+                                                                                                 :price 6000 ;
+                                                                                                 :psiExpressPortNumbers 1 ;
+                                                                                                 :sataConnectorsNumber 2 ,
+                                                                                                                       3 ;
+                                                                                                 :voltage 500 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper
@@ -1958,7 +2161,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06> rdf:type :Keybord ;
+                                                                              :forGaming "false"^^xsd:boolean ;
+                                                                              :keyboardType "zicna" ;
+                                                                              :palmSupport "flase" ;
+                                                                              :price 700 ;
+                                                                              :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570
@@ -1966,11 +2174,21 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus> rdf:type :PowerSupply ;
+                                                                                              :molex 4 ;
+                                                                                              :pin24 1 ;
+                                                                                              :pin8 1 ;
+                                                                                              :price 38000 ;
+                                                                                              :psiExpressPortNumbers 4 ;
+                                                                                              :sataConnectorsNumber 12 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator> rdf:type :Memory .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator> rdf:type :Memory ;
+                                                                                       :InternalMemoryCapacity 8 ;
+                                                                                       :memoryClockSpeed 3200 ;
+                                                                                       :memoryVoltage 1.35 ;
+                                                                                       :price 6000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XONAR
@@ -2002,7 +2220,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697> rdf:type :Keybord .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697> rdf:type :Keybord ;
+                                                                                     :forGaming "true"^^xsd:boolean ;
+                                                                                     :keyboardType "zicna" ;
+                                                                                     :palmSupport "flase" ;
+                                                                                     :price 1800 ;
+                                                                                     :waterResistance "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zotac
@@ -2146,7 +2369,15 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+> rdf:type :PowerSupply .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+> rdf:type :PowerSupply ;
+                                                                                 :molex 4 ;
+                                                                                 :pin24 24 ;
+                                                                                 :pin8 1 ;
+                                                                                 :price 9000 ;
+                                                                                 :psiExpressPortNumbers 2 ;
+                                                                                 :sataConnectorsNumber 6 ;
+                                                                                 :voltage 600 ;
+                                                                                 rdfs:comment "80 Plus Bronze dodati" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Dual
