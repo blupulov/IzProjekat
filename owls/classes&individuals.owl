@@ -1310,7 +1310,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S> rdf:type :Monitor ;
+                                                                                  :diagonal 27 ;
+                                                                                  :price 37.990 ;
+                                                                                  :responseTime 144 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ethernet_Chip
@@ -1350,7 +1353,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Force_Series__MP510
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Force_Series__MP510> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Force_Series__MP510> rdf:type :SSD ;
+                                                                                              :TBW 3120 ;
+                                                                                              :price "33,512" ;
+                                                                                              :ssdCapacity "2 tb" ;
+                                                                                              <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "3,480MB/s / 2,700MB/s" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fractal
@@ -1362,11 +1369,14 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury> rdf:type :Memory .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1> rdf:type :Monitor ;
+                                                                                               :diagonal "23,8" ;
+                                                                                               :price 27.499 ;
+                                                                                               :responseTime 165 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync
@@ -1390,7 +1400,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC> rdf:type :Monitor ;
+                                                                                   :diagonal 27 ;
+                                                                                   :price "30 485" ;
+                                                                                   :responseTime 75 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight
@@ -1402,19 +1415,35 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super> rdf:type :GraphicsCard ;
+                                                                                                 :GPUSpeed 1470 ;
+                                                                                                 :HDMIPortsQuantity 1 ;
+                                                                                                 :adapterMemory 8 ;
+                                                                                                 :price "47,200" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3060
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3060> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3060> rdf:type :GraphicsCard ;
+                                                                                           :GPUSpeed 1320 ;
+                                                                                           :HDMIPortsQuantity 1 ;
+                                                                                           :adapterMemory 12 ;
+                                                                                           :price "70,800" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3070
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3070> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3070> rdf:type :GraphicsCard ;
+                                                                                           :GPUSpeed 1500 ;
+                                                                                           :HDMIPortsQuantity 1 ;
+                                                                                           :adapterMemory 8 ;
+                                                                                           :price "59,354" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080> rdf:type :GraphicsCard ;
+                                                                                           :GPUSpeed 1440 ;
+                                                                                           :HDMIPortsQuantity 1 ;
+                                                                                           :adapterMemory 10 ;
+                                                                                           :price 72000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Geil
@@ -1498,7 +1527,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500> rdf:type :SSD ;
+                                                                                 :TBW 600 ;
+                                                                                 :price 28600 ;
+                                                                                 :ssdCapacity 1 ;
+                                                                                 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "3,500/2,900" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KINGSTON
@@ -1531,7 +1564,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27> rdf:type :Monitor ;
+                                                                                     :diagonal "68,6" ;
+                                                                                     :price "74 789" ;
+                                                                                     :responseTime 165 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed
@@ -1567,7 +1603,7 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Headphones .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI
@@ -1595,7 +1631,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT> rdf:type :Monitor ;
+                                                                                      :diagonal 34 ;
+                                                                                      :price "72 000" ;
+                                                                                      :responseTime 144 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mikro_ATX
@@ -1616,15 +1655,15 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NV1
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NV1> rdf:type :SSD ;
-                                                                              owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1> .
+                                                                              owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1> ;
+                                                                              :TBW 240 ;
+                                                                              :price 20500 ;
+                                                                              :ssdCapacity 1 ;
+                                                                              <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "2100/1700" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA> rdf:type :Brand .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA_GeForce_RTX_3080
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA_GeForce_RTX_3080> rdf:type :GraphicsCard .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1
@@ -1725,11 +1764,19 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560> rdf:type :GraphicsCard ;
+                                                                                        :GPUSpeed 1175 ;
+                                                                                        :HDMIPortsQuantity 1 ;
+                                                                                        :adapterMemory 4 ;
+                                                                                        :price "15,340" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT> rdf:type :GraphicsCard ;
+                                                                                           :GPUSpeed 2321 ;
+                                                                                           :HDMIPortsQuantity 1 ;
+                                                                                           :adapterMemory 12 ;
+                                                                                           :price "56,522" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_Vega_3
@@ -1826,7 +1873,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc> rdf:type :Monitor ;
+                                                                                        :diagonal 27 ;
+                                                                                        :price "63 040" ;
+                                                                                        :responseTime 75 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III
@@ -1838,7 +1888,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SN570> rdf:type :SSD ;
+                                                                                :TBW 300 ;
+                                                                                :price 6100 ;
+                                                                                :ssdCapacity "0,5" ;
+                                                                                <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "3500/2300" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SODIMM
@@ -1850,15 +1904,26 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28> rdf:type :SSD ;
+                                                                                           :TBW 350 ;
+                                                                                           :price 7500 ;
+                                                                                           :ssdCapacity "0,5" ;
+                                                                                           <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "560/530" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SSD_M.2_2_TB_Kingston_KC2500_NVMe> rdf:type :SSD ;
+                                                                                                            :TBW 1200 ;
+                                                                                                            :price 33700 ;
+                                                                                                            :ssdCapacity 2 ;
+                                                                                                            <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "3500  / 2900" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> rdf:type :HDD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> rdf:type :HDD ;
+                                                                                                           :hddCapacity 1 ;
+                                                                                                           :hddSpeed 0.6 ;
+                                                                                                           :price 5990 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk
@@ -1910,7 +1975,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E> rdf:type :Monitor ;
+                                                                                 :diagonal 30 ;
+                                                                                 :price "123 200" ;
+                                                                                 :responseTime 60 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630
@@ -1918,7 +1986,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34> rdf:type :Monitor ;
+                                                                                       :diagonal 34 ;
+                                                                                       :price "93 999" ;
+                                                                                       :responseTime 75 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40
@@ -1930,7 +2001,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> rdf:type :Monitor ;
+                                                                                  :diagonal 23.8 ;
+                                                                                  :price 19.999 ;
+                                                                                  :responseTime 75 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Value_Series_APB-500B8
@@ -1938,7 +2012,11 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper> rdf:type :SSD .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Viper> rdf:type :SSD ;
+                                                                                :TBW 400 ;
+                                                                                :price 6490 ;
+                                                                                :ssdCapacity "0,25" ;
+                                                                                <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> "3000/1000" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED
@@ -2118,7 +2196,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1> rdf:type :Monitor ;
+                                                                                :diagonal 43 ;
+                                                                                :price 94.999 ;
+                                                                                :responseTime 60 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700
@@ -2130,7 +2211,10 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA> rdf:type :Monitor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA> rdf:type :Monitor ;
+                                                                                  :diagonal "23,8" ;
+                                                                                  :price 23990 ;
+                                                                                  :responseTime 60 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9th_Generation_Intel_Core_i3_Processors

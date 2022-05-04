@@ -367,7 +367,8 @@
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080
 
-:GeForce_RTX_3080 a owl:NamedIndividual .
+:GeForce_RTX_3080 a owl:NamedIndividual ;
+	rdfs:comment "2 naziv grafike" .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Geil
 
@@ -592,11 +593,6 @@
 
 :NVIDIA a owl:NamedIndividual ;
 	rdfs:comment "2 brand" .
-# 
-# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVIDIA_GeForce_RTX_3080
-
-:NVIDIA_GeForce_RTX_3080 a owl:NamedIndividual ;
-	rdfs:comment "2 naziv grafike" .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#NVMe_NV1
 
