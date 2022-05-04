@@ -700,7 +700,8 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
 
-:RX-800AC-V a owl:NamedIndividual .
+:RX-800AC-V a owl:NamedIndividual ;
+	rdfs:comment "2 napajanje" .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560
 
@@ -722,11 +723,6 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax
 
 :Raidmax a owl:NamedIndividual .
-# 
-# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W
-
-:Raidmax_Vortex_White_RX-800AC-V_-_800_W a owl:NamedIndividual ;
-	rdfs:comment "2 napajanje" .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage
 
@@ -931,9 +927,9 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 :X570 a owl:NamedIndividual ;
 	rdfs:comment "2 cipset" .
 # 
-# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus
+# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750
 
-:XG750_Platinum_Plus a owl:NamedIndividual .
+:XG750 a owl:NamedIndividual .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator
 

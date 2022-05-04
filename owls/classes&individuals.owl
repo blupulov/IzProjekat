@@ -171,6 +171,12 @@
              rdfs:range :Keybord .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemory
+:haveMemory rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :computerProperties ;
+            rdfs:range :Memory .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemoryChannels
 :haveMemoryChannels rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :memoryProperties ;
@@ -529,6 +535,13 @@
              rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memorySlotsTaken
+:memorySlotsTaken rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Computer ;
+                  rdfs:range xsd:integer .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#memoryVoltage
 :memoryVoltage rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :memoryDataProperties ;
@@ -639,9 +652,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#psiExpressPortNumbers
 :psiExpressPortNumbers rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf :motherboardDataProperties ,
-                                          :powerSupplyDataProperties ;
+                       rdfs:subPropertyOf :motherboardDataProperties ;
                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#psiNumber
+:psiNumber rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :powerSupplyDataProperties ;
+           rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#responseTime
@@ -667,12 +685,6 @@
 :sensorType rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :mouseDataProperties ;
             rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#slotsTaken
-:slotsTaken rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#speakersDataProperties
@@ -730,7 +742,7 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#voltage
 :voltage rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :powerSupplyDataProperties ;
-         rdfs:range xsd:integer .
+         rdfs:range xsd:double .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#waterResistance
@@ -1153,7 +1165,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS> rdf:type :Desktop ;
+                                                                                   :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Air
@@ -1165,7 +1178,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ampere_Lite_ll
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ampere_Lite_ll> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ampere_Lite_ll> rdf:type :Desktop ;
+                                                                                         :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer
@@ -1182,6 +1196,7 @@
                                                                                        :cacheMemoryCapacity 4 ;
                                                                                        :coresNumber 2 ;
                                                                                        :lithography 14 ;
+                                                                                       :maxInternalMemory 32 ;
                                                                                        :memoryClockSpeedSupportedTo 2667 ;
                                                                                        :price 6000 ;
                                                                                        :processorBoostFrequency 3.4 ;
@@ -1238,7 +1253,7 @@
                                                                                :pin24 1 ;
                                                                                :pin8 4 ;
                                                                                :price 11000 ;
-                                                                               :psiExpressPortNumbers 2 ;
+                                                                               :psiNumber 2 ;
                                                                                :sataConnectorsNumber 8 ;
                                                                                :voltage 750 .
 
@@ -1291,13 +1306,13 @@
                                                                                    :pin24 1 ;
                                                                                    :pin8 1 ;
                                                                                    :price 11000 ;
-                                                                                   :psiExpressPortNumbers 2 ;
+                                                                                   :psiNumber 2 ;
                                                                                    :sataConnectorsNumber 6 ;
                                                                                    :voltage 750 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon> rdf:type :Brand .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Corsair
@@ -1309,7 +1324,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DELL
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DELL> rdf:type :Brand .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DELL> rdf:type :Brand ;
+                                                                               owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Dell> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DIMM
@@ -1378,7 +1394,7 @@
                                                                                     :pin24 1 ;
                                                                                     :pin8 1 ;
                                                                                     :price 5000 ;
-                                                                                    :psiExpressPortNumbers 2 ;
+                                                                                    :psiNumber 2 ;
                                                                                     :sataConnectorsNumber 4 ;
                                                                                     :voltage 750 ;
                                                                                     rdfs:comment "dodati u individuama 80 PLUS WHITE" .
@@ -1391,6 +1407,7 @@
                                                                                    :pin24 1 ;
                                                                                    :pin8 1 ;
                                                                                    :price 4000 ;
+                                                                                   :psiNumber 2 ;
                                                                                    :sataConnectorsNumber 4 ;
                                                                                    :voltage 600 .
 
@@ -1400,7 +1417,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint> rdf:type :Desktop ;
+                                                                                :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Force_Series__MP510
@@ -1588,7 +1606,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite> rdf:type :Desktop ;
+                                                                                        :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Intel
@@ -1959,7 +1978,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X> rdf:type :Desktop ;
+                                                                                       :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B
@@ -1978,6 +1998,7 @@
                                                                                  :molex 2 ;
                                                                                  :pin24 1 ;
                                                                                  :pin4 1 ;
+                                                                                 :psiNumber 1 ;
                                                                                  :sataConnectorsNumber 3 ;
                                                                                  :voltage 500 .
 
@@ -1998,7 +2019,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> rdf:type :PowerSupply ;
-                                                                                     owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> .
+                                                                                     :molex 3 ;
+                                                                                     :pin24 1 ;
+                                                                                     :pin8 1 ;
+                                                                                     :price 8500 ;
+                                                                                     :psiNumber 2 ;
+                                                                                     :sataConnectorsNumber 6 ;
+                                                                                     :voltage 800 ;
+                                                                                     rdfs:comment "80 Plus dodati" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560
@@ -2028,18 +2056,6 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax> rdf:type :Brand .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Raidmax_Vortex_White_RX-800AC-V_-_800_W> rdf:type :PowerSupply ;
-                                                                                                                  :molex 3 ;
-                                                                                                                  :pin24 1 ;
-                                                                                                                  :pin8 1 ;
-                                                                                                                  :price 8500 ;
-                                                                                                                  :psiExpressPortNumbers 2 ;
-                                                                                                                  :sataConnectorsNumber 6 ;
-                                                                                                                  :voltage 800 ;
-                                                                                                                  rdfs:comment "80 Plus dodati" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage
@@ -2188,7 +2204,7 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk> rdf:type :Processor .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SanDisk> rdf:type :SSD .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Seagate
@@ -2231,11 +2247,13 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3> rdf:type :Desktop ;
+                                                                                    :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I> rdf:type :Desktop ;
+                                                                                    :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trust
@@ -2287,7 +2305,7 @@
                                                                                                  :pin24 1 ;
                                                                                                  :pin8 1 ;
                                                                                                  :price 6000 ;
-                                                                                                 :psiExpressPortNumbers 1 ;
+                                                                                                 :psiNumber 1 ;
                                                                                                  :sataConnectorsNumber 2 ,
                                                                                                                        3 ;
                                                                                                  :voltage 500 .
@@ -2337,14 +2355,14 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570> rdf:type :ChipsetType .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750_Platinum_Plus> rdf:type :PowerSupply ;
-                                                                                              :molex 4 ;
-                                                                                              :pin24 1 ;
-                                                                                              :pin8 1 ;
-                                                                                              :price 38000 ;
-                                                                                              :psiExpressPortNumbers 4 ;
-                                                                                              :sataConnectorsNumber 12 .
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750> rdf:type :PowerSupply ;
+                                                                                :molex 4 ;
+                                                                                :pin24 1 ;
+                                                                                :pin8 1 ;
+                                                                                :price 38000 ;
+                                                                                :psiNumber 4 ;
+                                                                                :sataConnectorsNumber 12 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator
@@ -2380,7 +2398,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621> rdf:type :Desktop .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621> rdf:type :Desktop ;
+                                                                                     :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1
@@ -2561,7 +2580,7 @@
                                                                                  :pin24 24 ;
                                                                                  :pin8 1 ;
                                                                                  :price 9000 ;
-                                                                                 :psiExpressPortNumbers 2 ;
+                                                                                 :psiNumber 2 ;
                                                                                  :sataConnectorsNumber 6 ;
                                                                                  :voltage 600 ;
                                                                                  rdfs:comment "80 Plus Bronze dodati" .
@@ -2570,6 +2589,21 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Dual
 :Dual rdf:type owl:NamedIndividual ,
                :MemoryChannels .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus> rdf:type owl:NamedIndividual ,
+                                                                                          :Efficiency .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus_Gold
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus_Gold> rdf:type owl:NamedIndividual ,
+                                                                                               :Efficiency .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus_Platinum
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus_Platinum> rdf:type owl:NamedIndividual ,
+                                                                                                   :Efficiency .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
