@@ -83,9 +83,11 @@
                               :coolerProperties ,
                               :graphicCardProperties ,
                               :hddProperties ,
+                              :memoryProperties ,
                               :motherboardProperties ,
                               :peripheralDevices ,
                               :powerSupplyProperties ,
+                              :processorProperties ,
                               :ssdProperties ;
            rdfs:range :Brand .
 
@@ -147,6 +149,18 @@
             rdfs:range :Format .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveGraphicCard
+:haveGraphicCard rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :computerProperties ;
+                 rdfs:range :GraphicsCard .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveHDD
+:haveHDD rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :computerProperties ;
+         rdfs:range :HDD .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveHeadphones
 :haveHeadphones rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :havePeripheralDevices ;
@@ -171,6 +185,12 @@
              rdfs:range :Keybord .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveLatency
+:haveLatency rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :memoryProperties ;
+             rdfs:range :Latency .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemory
 :haveMemory rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :computerProperties ;
@@ -193,12 +213,6 @@
 :haveMemorySlots rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :memoryProperties ;
                  rdfs:range :Slots .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMemoryType
-:haveMemoryType rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :memoryProperties ;
-                rdfs:range :MemoryLayout .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveMonitor
@@ -230,6 +244,12 @@
                        rdfs:subPropertyOf :computerProperties .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#havePowerSupplay
+:havePowerSupplay rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :computerProperties ;
+                  rdfs:range :PowerSupply .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveProcessor
 :haveProcessor rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :computerProperties ;
@@ -240,6 +260,12 @@
 :haveProcessorFamily rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :processorProperties ;
                      rdfs:range :ProcessorFamily .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSSD
+:haveSSD rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :computerProperties ;
+         rdfs:range :SSD .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSSDInterfaceType
@@ -921,6 +947,11 @@
         rdfs:subClassOf :Computer .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Latency
+:Latency rdf:type owl:Class ;
+         rdfs:subClassOf :MemoryProperties .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Memory
 :Memory rdf:type owl:Class .
 
@@ -928,11 +959,6 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#MemoryChannels
 :MemoryChannels rdf:type owl:Class ;
                 rdfs:subClassOf :MemoryProperties .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#MemoryLayout
-:MemoryLayout rdf:type owl:Class ;
-              rdfs:subClassOf :MemoryProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#MemoryModule
@@ -1084,7 +1110,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC887
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC887> rdf:type :SoundCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC887> rdf:type :SoundCard ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC897_Audio_Codec_7.1_CH_HD_Audio
@@ -1183,7 +1210,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer> rdf:type :Brand .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer> rdf:type :Brand ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apple
@@ -1263,8 +1291,7 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16> rdf:type :Memory ;
-                                                                               owl:sameAs <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Predator_CL16> ;
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CL16> rdf:type :Latency ;
                                                                                :InternalMemoryCapacity 8 ;
                                                                                :memoryClockSpeed 3200 ;
                                                                                :memoryVoltage 1.35 ;
@@ -1346,6 +1373,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH> rdf:type :Memory ;
+                                                                                       :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apacer> ;
+                                                                                       :haveInternalMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
+                                                                                       :haveLatency :CL19 ;
+                                                                                       :haveMemoryChannels :Dual ;
+                                                                                       :haveMemorySlots <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DIMM> ;
                                                                                        :InternalMemoryCapacity 8 ;
                                                                                        :memoryClockSpeed 2666 ;
                                                                                        :memoryVoltage 1.2 ;
@@ -1353,7 +1385,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK> rdf:type :Brand .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK> rdf:type :Brand ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI
@@ -1418,6 +1451,17 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Flint> rdf:type :Desktop ;
+                                                                                :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Altos> ;
+                                                                                :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630> ;
+                                                                                :haveHDD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> ;
+                                                                                :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697> ;
+                                                                                :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH> ;
+                                                                                :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> ;
+                                                                                :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> ;
+                                                                                :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> ;
+                                                                                :havePowerSupplay <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L> ;
+                                                                                :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100> ;
+                                                                                :haveSpeakers <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> ;
                                                                                 :memorySlotsTaken 1 .
 
 
@@ -1953,6 +1997,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> rdf:type :Motherboard ;
+                                                                                             :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS> ;
+                                                                                             :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H310> ;
+                                                                                             :haveNetworkCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ALC887> ;
+                                                                                             :haveSocket <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FCLGA1151> ;
+                                                                                             :haveSoundCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H> ;
                                                                                              :memoryClockSpeedSupportedTo 2666 ;
                                                                                              :memorySlots 2 ;
                                                                                              :price 7000 ;
@@ -2014,7 +2063,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H> rdf:type :NetworkCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RTL8111H> rdf:type :NetworkCard ;
+                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Realtek> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V
@@ -2174,6 +2224,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> rdf:type :Speakers ;
+                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Genius> ;
                                                                                    :frequencyRangeFrom 100 ;
                                                                                    :frequencyRangeTo 20000 ;
                                                                                    :power 6 ;
@@ -2198,6 +2249,8 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> rdf:type :HDD ;
+                                                                                                           :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Seagate> ;
+                                                                                                           :haveInterfaceType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III> ;
                                                                                                            :hddCapacity 1 ;
                                                                                                            :hddSpeed 0.6 ;
                                                                                                            :price 5990 .
@@ -2268,7 +2321,9 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630> rdf:type :GraphicsCard .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UHD_Graphics_630> rdf:type :GraphicsCard ;
+                                                                                           :hasGraphicsMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
+                                                                                           :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Intel> .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34
@@ -2280,6 +2335,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> rdf:type :Mouse ;
+                                                                              :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Motospeed> ;
                                                                               :connectingType "usb" ;
                                                                               :forGaming "true"^^xsd:boolean ;
                                                                               :mouseResolution 4000 ;
@@ -2294,6 +2350,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> rdf:type :Monitor ;
+                                                                                  :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                  :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                  :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
+                                                                                  :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
+                                                                                  :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS> ;
                                                                                   :diagonal 23.8 ;
                                                                                   :price 19.999 ;
                                                                                   :responseTime 75 .
@@ -2414,6 +2475,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ziva_23697> rdf:type :Keybord ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trust> ;
                                                                                      :forGaming "true"^^xsd:boolean ;
                                                                                      :keyboardType "zicna" ;
                                                                                      :palmSupport "flase" ;
@@ -2427,6 +2489,12 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100> rdf:type :Processor ;
+                                                                                  :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Intel> ;
+                                                                                  :haveCacheMemoryType :Smart_Cache ;
+                                                                                  :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H310> ;
+                                                                                  :haveProcessorFamily <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9th_Generation_Intel_Core_i3_Processors> ;
+                                                                                  :haveSocket <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FCLGA1151> ;
+                                                                                  :supportMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
                                                                                   :TDP 65 ;
                                                                                   :cacheMemoryCapacity 6 ;
                                                                                   :coresNumber 4 ;
@@ -2586,9 +2654,44 @@
                                                                                  rdfs:comment "80 Plus Bronze dodati" .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#AM4
+:AM4 rdf:type owl:NamedIndividual ,
+              :Socket .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CL19
+:CL19 rdf:type owl:NamedIndividual ,
+               :Latency .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Dual
 :Dual rdf:type owl:NamedIndividual ,
                :MemoryChannels .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#L1
+:L1 rdf:type owl:NamedIndividual ,
+             :CacheMemoryType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#L2
+:L2 rdf:type owl:NamedIndividual ,
+             :CacheMemoryType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#L3
+:L3 rdf:type owl:NamedIndividual ,
+             :CacheMemoryType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Smart_Cache
+:Smart_Cache rdf:type owl:NamedIndividual ,
+                      :CacheMemoryType .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_PLUS_WHITE
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_PLUS_WHITE> rdf:type owl:NamedIndividual ,
+                                                                                                :Efficiency .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#80_Plus
