@@ -1319,7 +1319,9 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BlackWidow_V3
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BlackWidow_V3> rdf:type :Mouse .
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BlackWidow_V3> rdf:type :Keybord ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer> ;
+                                                                                        :price 15000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BlasterX_AE-5_PlusSABRE32
@@ -1353,6 +1355,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CNE-CMS2> rdf:type :Mouse ;
+                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Canyon> ;
                                                                                    :connectingType "usb" ;
                                                                                    :forGaming "false"^^xsd:boolean ;
                                                                                    :mouseResolution 5000 ;
@@ -1372,6 +1375,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US> rdf:type :Keybord ;
+                                                                                            :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech> ;
                                                                                             :forGaming "false"^^xsd:boolean ;
                                                                                             :keyboardType "Bezicna" ;
                                                                                             :palmSupport "false"^^xsd:boolean ;
@@ -1460,6 +1464,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI> rdf:type :Keybord ;
+                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESHARK> ;
                                                                                          :forGaming "true"^^xsd:boolean ;
                                                                                          :keyboardType "zicna" ;
                                                                                          :palmSupport "false"^^xsd:boolean ;
@@ -1597,6 +1602,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight> rdf:type :Mouse ;
+                                                                                             :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech> ;
                                                                                              :connectingType "usb" ;
                                                                                              :forGaming "true"^^xsd:boolean ;
                                                                                              :mouseResolution 25400 ;
@@ -1726,6 +1732,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018> rdf:type :Headphones ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARVO> ;
                                                                                  :connectingType "USB" ;
                                                                                  :forGaming "true"^^xsd:boolean ;
                                                                                  :frequencyRangeFrom 20 ;
@@ -1774,6 +1781,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KB-R81> rdf:type :Keybord ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rampage> ;
                                                                                  :forGaming "true"^^xsd:boolean ;
                                                                                  :keyboardType "zican" ;
                                                                                  :palmSupport "true"^^xsd:boolean ;
@@ -1783,6 +1791,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC200> rdf:type :Keybord ;
+                                                                                :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Hama> ;
                                                                                 :forGaming "false"^^xsd:boolean ;
                                                                                 :keyboardType "zicna" ;
                                                                                 :palmSupport "false"^^xsd:boolean ;
@@ -1807,6 +1816,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken> rdf:type :Headphones ;
+                                                                                 :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Razer> ;
                                                                                  :connectingType "USB" ;
                                                                                  :forGaming "true"^^xsd:boolean ;
                                                                                  :frequencyRangeFrom 12 ;
@@ -1818,6 +1828,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2> rdf:type :Keybord ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Redragon> ;
                                                                                         :forGaming "true"^^xsd:boolean ;
                                                                                         :keyboardType "zicna" ;
                                                                                         :palmSupport "false"^^xsd:boolean ;
@@ -1851,6 +1862,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed> rdf:type :Mouse ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Logitech> ;
                                                                                      :connectingType "usb" ;
                                                                                      :forGaming "true"^^xsd:boolean ;
                                                                                      :mouseResolution 16000 ;
@@ -1868,6 +1880,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite> rdf:type :Mouse ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CORSAIR> ;
                                                                                         :connectingType "usb" ;
                                                                                         :forGaming "true"^^xsd:boolean ;
                                                                                         :mouseResolution 18000 ;
@@ -1906,6 +1919,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730> rdf:type :Keybord ;
+                                                                                :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#COOLER_MASTER> ;
                                                                                 :forGaming "true"^^xsd:boolean ;
                                                                                 :keyboardType "zicna" ;
                                                                                 :palmSupport "true"^^xsd:boolean ;
@@ -1915,14 +1929,14 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> rdf:type :Headphones ;
-                                                                                        :connectingType "3,5" ,
-                                                                                                        "Bluetooth" ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MARSHALL> ;
+                                                                                        :connectingType "Bluetooth" ;
                                                                                         :forGaming "false"^^xsd:boolean ;
                                                                                         :frequencyRangeFrom 20 ;
-                                                                                        :frequencyRangeTo "20 000" ;
+                                                                                        :frequencyRangeTo 20000 ;
                                                                                         :haveMichrophone "false"^^xsd:boolean ,
                                                                                                          "true"^^xsd:boolean ;
-                                                                                        :price "35 000" .
+                                                                                        :price 35000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690
@@ -1951,6 +1965,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R> rdf:type :Mouse ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gembird> ;
                                                                                      :connectingType "usb" ;
                                                                                      :forGaming "true"^^xsd:boolean ;
                                                                                      :mouseResolution 2400 ;
@@ -1961,6 +1976,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard> rdf:type :Keybord ;
+                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apple> ;
                                                                                          :forGaming "false"^^xsd:boolean ;
                                                                                          :keyboardType "bezicna" ;
                                                                                          :palmSupport "false"^^xsd:boolean ;
@@ -1970,6 +1986,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3> rdf:type :Mouse ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Apple> ;
                                                                                         :connectingType "Bluetooth" ;
                                                                                         :forGaming "false"^^xsd:boolean ;
                                                                                         :price 12500 ;
@@ -2028,6 +2045,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600> rdf:type :Mouse ;
+                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HP> ;
                                                                                    :connectingType "usb" ;
                                                                                    :forGaming "true"^^xsd:boolean ;
                                                                                    :mouseResolution 12000 ;
@@ -2038,6 +2056,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_6CL96AA> rdf:type :Mouse ;
+                                                                                       :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HP> ;
                                                                                        :connectingType "usb" ;
                                                                                        :forGaming "true"^^xsd:boolean ;
                                                                                        :mouseResolution 16000 ;
@@ -2070,6 +2089,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> rdf:type :Mouse ;
+                                                                                          :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Dell> ;
                                                                                           :connectingType "usb" ;
                                                                                           :forGaming "false"^^xsd:boolean ;
                                                                                           :mouseResolution 1600 ;
@@ -2162,6 +2182,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B> rdf:type :Mouse ;
+                                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HyperX> ;
                                                                                                    :connectingType "usb" ;
                                                                                                    :forGaming "true"^^xsd:boolean ;
                                                                                                    :mouseResolution 6200 ;
@@ -2186,11 +2207,12 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100> rdf:type :Headphones ;
+                                                                                      :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#JBL> ;
                                                                                       :connectingType "3,5" ;
                                                                                       :forGaming "false"^^xsd:boolean ;
                                                                                       :frequencyRangeFrom 20 ;
-                                                                                      :frequencyRangeTo "20 000" ;
-                                                                                      :price "5 500" ;
+                                                                                      :frequencyRangeTo 20000 ;
+                                                                                      :price 5500 ;
                                                                                       :waterResistance "false"^^xsd:boolean .
 
 
@@ -2276,6 +2298,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX> rdf:type :Keybord ;
+                                                                                       :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS> ;
                                                                                        :forGaming "true"^^xsd:boolean ;
                                                                                        :keyboardType "zicna" ;
                                                                                        :palmSupport "false"^^xsd:boolean ;
@@ -2373,8 +2396,9 @@
                                                                                   :connectingType "3,5" ;
                                                                                   :forGaming "false"^^xsd:boolean ;
                                                                                   :frequencyRangeFrom 20 ;
-                                                                                  :frequencyRangeTo "20 000" ;
+                                                                                  :frequencyRangeTo 20000 ;
                                                                                   :haveMichrophone "true"^^xsd:boolean ;
+                                                                                  :price 700 ;
                                                                                   :waterResistance "false"^^xsd:boolean .
 
 
@@ -2452,6 +2476,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#TicPods_2_Pro_Ice> rdf:type :Headphones ;
+                                                                                            :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Mobvoi> ;
                                                                                             :connectingType "Bluetooth" ;
                                                                                             :forGaming "false"^^xsd:boolean ;
                                                                                             :frequencyRangeFrom 20 ;
@@ -2553,6 +2578,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3> rdf:type :Headphones ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Sony> ;
                                                                                      :connectingType "Bluetooth" ;
                                                                                      :forGaming "false"^^xsd:boolean ;
                                                                                      :frequencyRangeFrom 20 ;
@@ -2572,6 +2598,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06> rdf:type :Keybord ;
+                                                                              :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Xwave> ;
                                                                               :forGaming "false"^^xsd:boolean ;
                                                                               :keyboardType "zicna" ;
                                                                               :palmSupport "flase" ;
@@ -2619,6 +2646,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#YSP_2010BN> rdf:type :Speakers ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Yenkee> ;
                                                                                      :frequencyRangeFrom 50 ;
                                                                                      :frequencyRangeTo 20000 ;
                                                                                      :power 5 ;
@@ -2640,11 +2668,13 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1> rdf:type :Headphones ;
+                                                                                      :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Redragon> ;
                                                                                       :connectingType "3,5" ;
                                                                                       :forGaming "true"^^xsd:boolean ;
                                                                                       :frequencyRangeFrom 20 ;
                                                                                       :frequencyRangeTo 20000 ;
                                                                                       :haveMichrophone "true"^^xsd:boolean ;
+                                                                                      :price 5600 ;
                                                                                       :waterResistance "false"^^xsd:boolean .
 
 
@@ -2804,12 +2834,13 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700> rdf:type :Headphones ;
+                                                                              :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BOSE> ;
                                                                               :connectingType 3.5 ;
                                                                               :forGaming "false"^^xsd:boolean ;
                                                                               :frequencyRangeFrom 20 ;
                                                                               :frequencyRangeTo 20000 ;
                                                                               :haveMichrophone "true"^^xsd:boolean ;
-                                                                              :price "38 000" ;
+                                                                              :price 38000 ;
                                                                               :waterResistance "true"^^xsd:boolean .
 
 
