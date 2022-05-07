@@ -244,10 +244,10 @@
                        rdfs:subPropertyOf :computerProperties .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#havePowerSupplay
-:havePowerSupplay rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :computerProperties ;
-                  rdfs:range :PowerSupply .
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#havePowerSupply
+:havePowerSupply rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :computerProperties ;
+                 rdfs:range :PowerSupply .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveProcessor
@@ -1232,6 +1232,18 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Aegis_RS> rdf:type :Desktop ;
+                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> ;
+                                                                                   :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Basic_240> ;
+                                                                                   :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3070> ;
+                                                                                   :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MONITOR_2_ANC> ;
+                                                                                   :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_keyboard> ;
+                                                                                   :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury> ;
+                                                                                   :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1> ;
+                                                                                   :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS> ;
+                                                                                   :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Magic_mouse_3> ;
+                                                                                   :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#C750> ;
+                                                                                   :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i9-11900K> ;
+                                                                                   :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WDS500G3B0C> ;
                                                                                    :memorySlotsTaken 1 .
 
 
@@ -1245,6 +1257,18 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ampere_Lite_ll
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ampere_Lite_ll> rdf:type :Desktop ;
+                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Altos> ;
+                                                                                         :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prisma_AL-12> ;
+                                                                                         :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3070> ;
+                                                                                         :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kraken> ;
+                                                                                         :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#BlackWidow_V3> ;
+                                                                                         :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pristine_GAP416GB3200C22SC> ;
+                                                                                         :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT> ;
+                                                                                         :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_B550M-HDV> ;
+                                                                                         :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pulsefire_Core_HX-MC004B> ;
+                                                                                         :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FGC-750> ;
+                                                                                         :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X> ;
+                                                                                         :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CSSD-F960GBMP510B> ;
                                                                                          :memorySlotsTaken 1 .
 
 
@@ -1478,6 +1502,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EX2710S> rdf:type :Monitor ;
+                                                                                  :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                  :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                  :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                  :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
+                                                                                  :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                   :diagonal 27 ;
                                                                                   :price 37.990 ;
                                                                                   :responseTime 144 .
@@ -1539,7 +1568,7 @@
                                                                                 :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA24EHE> ;
                                                                                 :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_H310M-K_R2.0> ;
                                                                                 :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#V40> ;
-                                                                                :havePowerSupplay <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L> ;
+                                                                                :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FLC-600L> ;
                                                                                 :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i3-9100> ;
                                                                                 :haveSpeakers <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP-HF280> ;
                                                                                 :memorySlotsTaken 1 .
@@ -1568,6 +1597,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1> rdf:type :Monitor ;
+                                                                                               :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                               :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                               :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                               :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
+                                                                                               :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                                :diagonal "23,8" ;
                                                                                                :price 27.499 ;
                                                                                                :responseTime 165 .
@@ -1595,6 +1629,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC> rdf:type :Monitor ;
+                                                                                   :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                   :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                   :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                   :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
+                                                                                   :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                    :diagonal 27 ;
                                                                                    :price "30 485" ;
                                                                                    :responseTime 75 .
@@ -1768,6 +1807,18 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Infinity_Lite> rdf:type :Desktop ;
+                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EWE> ;
+                                                                                        :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EC-XY661> ;
+                                                                                        :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_6700XT> ;
+                                                                                        :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#700> ;
+                                                                                        :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MK730> ;
+                                                                                        :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XMP_Predator> ;
+                                                                                        :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27> ;
+                                                                                        :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MAG_B550_TOMAHAWK> ;
+                                                                                        :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G_Pro_X_Superlight> ;
+                                                                                        :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#XG750> ;
+                                                                                        :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_5_5600X> ;
+                                                                                        :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SNVS1000G> ;
                                                                                         :memorySlotsTaken 1 .
 
 
@@ -1855,6 +1906,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Legion_Y27> rdf:type :Monitor ;
+                                                                                     :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                     :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                     :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                     :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1440> ;
+                                                                                     :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                      :diagonal "68,6" ;
                                                                                      :price "74 789" ;
                                                                                      :responseTime 165 .
@@ -1939,26 +1995,6 @@
                                                                                         :price 35000 .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690> rdf:type :Motherboard ;
-                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> ;
-                                                                                   :haveChipsetType :Z690 ;
-                                                                                   :haveInternalMemoryType :DDR5 ;
-                                                                                   :haveSocket :FCLGA1700 ;
-                                                                                   :displayPortNumbers 1 ;
-                                                                                   :hdmiNumbers 1 ;
-                                                                                   :maxInternalMemory 128 ;
-                                                                                   :memoryClockSpeedSupportedTo 6000 ;
-                                                                                   :memorySlots 4 ;
-                                                                                   :price 65000 ;
-                                                                                   :sataConnectorsNumber 6 ;
-                                                                                   :usb2.0Family 8 ;
-                                                                                   :usb3.0Family 9 ;
-                                                                                   :xslot1 1 ;
-                                                                                   :xslot16 3 ;
-                                                                                   rdfs:comment "za kasnije" .
-
-
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> rdf:type :Brand .
 
@@ -2010,6 +2046,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MateView_GT> rdf:type :Monitor ;
+                                                                                      :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#21:9> ;
+                                                                                      :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED> ;
+                                                                                      :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA> ;
+                                                                                      :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1600> ;
+                                                                                      :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync> ;
                                                                                       :diagonal 34 ;
                                                                                       :price "72 000" ;
                                                                                       :responseTime 144 .
@@ -2177,6 +2218,18 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Pro_Gaming_X> rdf:type :Desktop ;
+                                                                                       :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Gigatron> ;
+                                                                                       :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_Lite_240> ;
+                                                                                       :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3060> ;
+                                                                                       :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018> ;
+                                                                                       :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CRAFT_ADVANCED_US> ;
+                                                                                       :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Beast_RGB> ;
+                                                                                       :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34> ;
+                                                                                       :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AORUS_ELITE> ;
+                                                                                       :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Premier_MS7421W> ;
+                                                                                       :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CTG-750C> ;
+                                                                                       :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i7-11700F> ;
+                                                                                       :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#CSSD-F960GBMP510B> ;
                                                                                        :memorySlotsTaken 1 .
 
 
@@ -2381,6 +2434,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc> rdf:type :Monitor ;
+                                                                                        :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                        :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                        :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                        :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1440> ;
+                                                                                        :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                         :diagonal 27 ;
                                                                                         :price "63 040" ;
                                                                                         :responseTime 75 .
@@ -2488,11 +2546,34 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Tornado_3> rdf:type :Desktop ;
+                                                                                    :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Altos> ;
+                                                                                    :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EC-XY661> ;
+                                                                                    :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_2060_Super> ;
+                                                                                    :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#WH-1000XM3> ;
+                                                                                    :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Rog_Scope_RX> ;
+                                                                                    :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E> ;
+                                                                                    :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_X570_GAMING_X> ;
+                                                                                    :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#M65_RGB_Elite> ;
+                                                                                    :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> ;
+                                                                                    :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X> ;
+                                                                                    :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500> ;
                                                                                     :memorySlotsTaken 1 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Trinity_I> rdf:type :Desktop ;
+                                                                                    :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Altos> ;
+                                                                                    :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MasterLiquid_ML120L_V2_RGB> ;
+                                                                                    :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GeForce_RTX_3080> ;
+                                                                                    :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zeus_H510-1> ;
+                                                                                    :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Kumara_K552-2> ;
+                                                                                    :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Fury> ;
+                                                                                    :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#S2722DZ_27inc> ;
+                                                                                    :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AM4_X570_GAMING_X> ;
+                                                                                    :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Omen_600> ;
+                                                                                    :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#RX-800AC-V> ;
+                                                                                    :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_7_5800X> ;
+                                                                                    :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KC2500> ;
                                                                                     :memorySlotsTaken 1 .
 
 
@@ -2502,6 +2583,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#U3023E> rdf:type :Monitor ;
+                                                                                 :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:10> ;
+                                                                                 :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                 :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                 :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1600> ;
+                                                                                 :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                  :diagonal 30 ;
                                                                                  :price "123 200" ;
                                                                                  :responseTime 60 .
@@ -2516,6 +2602,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#UltraWide_34> rdf:type :Monitor ;
+                                                                                       :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#21:9> ;
+                                                                                       :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                       :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                       :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1080> ;
+                                                                                       :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                        :diagonal 34 ;
                                                                                        :price "93 999" ;
                                                                                        :responseTime 75 .
@@ -2661,8 +2752,40 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590> rdf:type :ChipsetType .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS> rdf:type :Motherboard ;
+                                                                                    :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> ;
+                                                                                    :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590> ;
+                                                                                    :haveInternalMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
+                                                                                    :haveSocket <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FCLGA1200> ;
+                                                                                    :displayPortNumbers 1 ;
+                                                                                    :hdmiNumbers 1 ;
+                                                                                    :maxInternalMemory 128 ;
+                                                                                    :memoryClockSpeedSupportedTo 6000 ;
+                                                                                    :memorySlots 4 ;
+                                                                                    :price 65000 ;
+                                                                                    :sataConnectorsNumber 6 ;
+                                                                                    :usb2.0Family 8 ;
+                                                                                    :usb3.0Family 9 ;
+                                                                                    :xslot1 1 ;
+                                                                                    :xslot16 3 ;
+                                                                                    rdfs:comment "za kasnije" .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621> rdf:type :Desktop ;
+                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Zotac> ;
+                                                                                     :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EC-XY661> ;
+                                                                                     :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_Vega_3> ;
+                                                                                     :haveHDD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance> ;
+                                                                                     :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SEP_120> ;
+                                                                                     :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X06> ;
+                                                                                     :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AD4S32008G22-SGN> ;
+                                                                                     :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-Master_G2470HSU-B1> ;
+                                                                                     :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Prime_B450M-K_II> ;
+                                                                                     :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MUSG-001-R> ;
+                                                                                     :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Q_500W> ;
+                                                                                     :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Ryzen_3_3200U> ;
                                                                                      :memorySlotsTaken 1 .
 
 
@@ -2827,6 +2950,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#439P1> rdf:type :Monitor ;
+                                                                                :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:9> ;
+                                                                                :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED> ;
+                                                                                :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#VA> ;
+                                                                                :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840x2160> ;
+                                                                                :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync> ;
                                                                                 :diagonal 43 ;
                                                                                 :price 94.999 ;
                                                                                 :responseTime 60 .
@@ -2850,6 +2978,11 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#9RV17AA> rdf:type :Monitor ;
+                                                                                  :hasAspectRatio <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#16:10> ;
+                                                                                  :hasDisplayPannel <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LED> ;
+                                                                                  :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
+                                                                                  :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
+                                                                                  :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                   :diagonal "23,8" ;
                                                                                   :price 23990 ;
                                                                                   :responseTime 60 .
@@ -2929,6 +3062,24 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CL40
 :CL40 rdf:type owl:NamedIndividual ,
                :Latency .
+
+
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Comet_Pro_II
+:Comet_Pro_II rdf:type owl:NamedIndividual ,
+                       :Desktop ;
+              :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Altos> ;
+              :haveCooler <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EC-XY661> ;
+              :haveGraphicCard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Radeon_RX_560> ;
+              :haveHeadphones <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Quantum_100> ;
+              :haveKeybord <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ESL-K1_KODACHI> ;
+              :haveMemory <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#EL.08G2V.GNH> ;
+              :haveMonitor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#GW2785TC> ;
+              :haveMotherboard <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#H410M_S2H_V3_G10> ;
+              :haveMouse <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#LightSpeed> ;
+              :havePowerSupply <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Titan+> ;
+              :haveProcessor <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#i5-9400F> ;
+              :haveSSD <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SP512GBSS3A55M28> ;
+              rdfs:comment "5 racunar" .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#DDR5

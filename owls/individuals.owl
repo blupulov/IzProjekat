@@ -540,10 +540,6 @@
 
 :MONITOR_2_ANC a owl:NamedIndividual .
 # 
-# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MPG_Z690
-
-:MPG_Z690 a owl:NamedIndividual .
-# 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI
 
 :MSI a owl:NamedIndividual .
@@ -934,6 +930,10 @@ https://gigatron.rs/gigatron-racunari/gigatron-prime-pro-gaming-x-472829""" .
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590
 
 :Z590 a owl:NamedIndividual .
+# 
+# http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS
+
+:Z590_PLUS a owl:NamedIndividual .
 # 
 # http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
 
