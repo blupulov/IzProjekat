@@ -94,8 +94,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveBusType
 :haveBusType rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :processorProperties ;
-             rdfs:range :BusType .
+             rdfs:subPropertyOf :processorProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCacheMemoryType
@@ -120,7 +119,7 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveCooler
 :haveCooler rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :computerProperties ;
-            rdfs:domain :Computer ;
+            rdfs:domain :Desktop ;
             rdfs:range :Cooler .
 
 
@@ -247,6 +246,7 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#havePowerSupply
 :havePowerSupply rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :computerProperties ;
+                 rdfs:domain :Desktop ;
                  rdfs:range :PowerSupply .
 
 
@@ -301,8 +301,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveWritingType
 :haveWritingType rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hddProperties ;
-                 rdfs:range :WritingType .
+                 rdfs:subPropertyOf :hddProperties .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddProperties
@@ -831,11 +830,6 @@
 :Brand rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#BusType
-:BusType rdf:type owl:Class ;
-         rdfs:subClassOf :ProcessorProperties .
-
-
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#CacheMemoryType
 :CacheMemoryType rdf:type owl:Class ;
                  rdfs:subClassOf :ProcessorProperties .
@@ -848,7 +842,12 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Computer
-:Computer rdf:type owl:Class .
+:Computer rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Desktop
+                                              :Laptop
+                                            )
+                              ] .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Controller
@@ -1080,11 +1079,6 @@
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Sync
 :Sync rdf:type owl:Class ;
       rdfs:subClassOf :MonitorProperties .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#WritingType
-:WritingType rdf:type owl:Class ;
-             rdfs:subClassOf :HDDProperties .
 
 
 #################################################################
@@ -1508,7 +1502,7 @@
                                                                                   :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
                                                                                   :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                   :diagonal 27 ;
-                                                                                  :price 37.990 ;
+                                                                                  :price 37990 ;
                                                                                   :responseTime 144 .
 
 
@@ -1602,8 +1596,8 @@
                                                                                                :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
                                                                                                :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
                                                                                                :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
-                                                                                               :diagonal "23,8" ;
-                                                                                               :price 27.499 ;
+                                                                                               :diagonal 23.8 ;
+                                                                                               :price 27499 ;
                                                                                                :responseTime 165 .
 
 
@@ -1635,7 +1629,7 @@
                                                                                    :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
                                                                                    :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                    :diagonal 27 ;
-                                                                                   :price "30 485" ;
+                                                                                   :price 30485 ;
                                                                                    :responseTime 75 .
 
 
@@ -1911,8 +1905,8 @@
                                                                                      :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
                                                                                      :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1440> ;
                                                                                      :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
-                                                                                     :diagonal "68,6" ;
-                                                                                     :price "74 789" ;
+                                                                                     :diagonal 68.6 ;
+                                                                                     :price 74789 ;
                                                                                      :responseTime 165 .
 
 
@@ -2052,7 +2046,7 @@
                                                                                       :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1600> ;
                                                                                       :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync> ;
                                                                                       :diagonal 34 ;
-                                                                                      :price "72 000" ;
+                                                                                      :price 72000 ;
                                                                                       :responseTime 144 .
 
 
@@ -2440,7 +2434,7 @@
                                                                                         :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1440> ;
                                                                                         :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                         :diagonal 27 ;
-                                                                                        :price "63 040" ;
+                                                                                        :price 60040 ;
                                                                                         :responseTime 75 .
 
 
@@ -2589,7 +2583,7 @@
                                                                                  :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1600> ;
                                                                                  :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                  :diagonal 30 ;
-                                                                                 :price "123 200" ;
+                                                                                 :price 123200 ;
                                                                                  :responseTime 60 .
 
 
@@ -2608,7 +2602,7 @@
                                                                                        :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#2560x1080> ;
                                                                                        :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                        :diagonal 34 ;
-                                                                                       :price "93 999" ;
+                                                                                       :price 93999 ;
                                                                                        :responseTime 75 .
 
 
@@ -2635,7 +2629,7 @@
                                                                                   :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
                                                                                   :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ASUS> ;
                                                                                   :diagonal 23.8 ;
-                                                                                  :price 19.999 ;
+                                                                                  :price 19999 ;
                                                                                   :responseTime 75 .
 
 
@@ -2753,7 +2747,8 @@
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS> rdf:type :Motherboard ;
+<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590_PLUS> rdf:type owl:NamedIndividual ,
+                                                                                             :Motherboard ;
                                                                                     :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#MSI> ;
                                                                                     :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Z590> ;
                                                                                     :haveInternalMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
@@ -2768,8 +2763,7 @@
                                                                                     :usb2.0Family 8 ;
                                                                                     :usb3.0Family 9 ;
                                                                                     :xslot1 1 ;
-                                                                                    :xslot16 3 ;
-                                                                                    rdfs:comment "za kasnije" .
+                                                                                    :xslot16 3 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ZBOX_CA621
@@ -2956,7 +2950,7 @@
                                                                                 :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#3840x2160> ;
                                                                                 :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#G-sync> ;
                                                                                 :diagonal 43 ;
-                                                                                :price 94.999 ;
+                                                                                :price 94999 ;
                                                                                 :responseTime 60 .
 
 
@@ -2983,7 +2977,7 @@
                                                                                   :hasDisplayType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#IPS> ;
                                                                                   :hasResolution <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#1920x1080> ;
                                                                                   :hasSyncType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#FreeSync> ;
-                                                                                  :diagonal "23,8" ;
+                                                                                  :diagonal 23.8 ;
                                                                                   :price 23990 ;
                                                                                   :responseTime 60 .
 
