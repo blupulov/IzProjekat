@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/lenovo/ontologies/2022/3/untitled-ontology-13" uri="class-owl.owl"/>
-    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33" uri="individuals.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
