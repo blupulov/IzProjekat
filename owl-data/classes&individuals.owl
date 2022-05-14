@@ -172,8 +172,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveChipsetType
 :haveChipsetType rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :motherboardProperties ,
-                                    :processorProperties ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:range :ChipsetType .
 
 
@@ -349,8 +348,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#haveSocket
 :haveSocket rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :motherboardProperties ,
-                               :processorProperties ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:range :Socket .
 
 
@@ -414,8 +412,7 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#supportMemoryType
 :supportMemoryType rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :motherboardProperties ,
-                                      :processorProperties ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:range :InternalMemoryType .
 
 
@@ -1048,7 +1045,8 @@
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#Motherboard
 :Motherboard rdf:type owl:Class ;
-             owl:disjointWith :Storage .
+             owl:disjointWith :Processor ,
+                              :Storage .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#MotherboardFormat
@@ -1380,7 +1378,6 @@
                                                                                        :cacheMemoryCapacity 4 ;
                                                                                        :coresNumber 2 ;
                                                                                        :lithography 14 ;
-                                                                                       :maxInternalMemory 32 ;
                                                                                        :memoryClockSpeedSupportedTo 2667 ;
                                                                                        :price 6000 ;
                                                                                        :processorBoostFrequency 3.4 ;
