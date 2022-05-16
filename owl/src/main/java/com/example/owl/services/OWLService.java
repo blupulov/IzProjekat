@@ -1,21 +1,31 @@
 package com.example.owl.services;
 
+import org.apache.jena.base.Sys;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.RDFDataMgr;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.springframework.asm.TypeReference;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
-import java.nio.file.Paths;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 @Service
 public class OWLService {
     private OWLOntologyManager manager;
     private OWLOntology ontology;
+    private Model model;
 
     public OWLService() {
         createManager();
         loadOntology();
+        loadModel();
     }
 
     public OWLOntologyManager getManager() {
@@ -26,9 +36,21 @@ public class OWLService {
         return this.ontology;
     }
 
+    public Model getModel() {
+        return this.model;
+    }
+
     public void testOntology() {
         System.out.println(this.ontology);
-        //System.out.println(Paths.get(".").toAbsolutePath().normalize().toString());
+    }
+
+    public void executeTestQuery(String query)  {
+        QueryExecution qe = QueryExecutionFactory.create(QueryFactory.create(query),model);
+        ResultSet rs = qe.execSelect();
+        while (rs.hasNext()) {
+            QuerySolution qs = rs.nextSolution();
+            System.out.println(qs.toString());
+        }
     }
 
     private void createManager() {
@@ -38,7 +60,6 @@ public class OWLService {
     private void loadOntology() {
         String filePath = "..\\owl-data\\classes&individuals.owl";
         File file = new File(filePath);
-
         try {
             this.ontology = this.manager.loadOntologyFromOntologyDocument(file);
         } catch (Exception e) {
@@ -46,4 +67,14 @@ public class OWLService {
         }
     }
 
+    private void loadModel() {
+        String filePath = "..\\owl-data\\classes&individuals.owl";
+        this.model = ModelFactory.createDefaultModel();
+        try {
+            InputStream is = new FileInputStream(filePath);
+            RDFDataMgr.read(this.model, is, Lang.TURTLE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
