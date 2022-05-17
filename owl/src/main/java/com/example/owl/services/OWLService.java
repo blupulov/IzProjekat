@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class OWLService {
@@ -51,6 +53,16 @@ public class OWLService {
             QuerySolution qs = rs.nextSolution();
             System.out.println(qs.toString());
         }
+    }
+
+    public List<QuerySolution> executeQuery(String query) {
+        List<QuerySolution> retVal = new ArrayList<>();
+        QueryExecution qe = QueryExecutionFactory.create(QueryFactory.create(query), model);
+        ResultSet rs = qe.execSelect();
+        while (rs.hasNext()) {
+            retVal.add(rs.nextSolution());
+        }
+        return retVal;
     }
 
     private void createManager() {

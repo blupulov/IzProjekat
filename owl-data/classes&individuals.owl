@@ -1371,6 +1371,7 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#Athlon_300GE> rdf:type owl:NamedIndividual ,
                                                                                                 :Processor ;
                                                                                        :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD> ;
+                                                                                       :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#A320> ;
                                                                                        :haveProcessorFamily <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Athlon_Processors> ;
                                                                                        :haveSocket :AM4 ;
                                                                                        :supportMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
@@ -2584,6 +2585,7 @@
                                                                                                  :Processor ;
                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD> ;
                                                                                         :haveCacheMemoryType :L3 ;
+                                                                                        :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#B450> ;
                                                                                         :haveProcessorFamily <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_3_Desktop_Processors> ;
                                                                                         :haveSocket :AM4 ;
                                                                                         :supportMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
@@ -2603,6 +2605,7 @@
                                                                                                  :Processor ;
                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD> ;
                                                                                         :haveCacheMemoryType :L3 ;
+                                                                                        :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#B550> ;
                                                                                         :haveProcessorFamily <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_5_Desktop_Processors> ;
                                                                                         :haveSocket :AM4 ;
                                                                                         :supportMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
@@ -2642,6 +2645,7 @@
                                                                                                  :Processor ;
                                                                                         :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD> ;
                                                                                         :haveCacheMemoryType :L3 ;
+                                                                                        :haveChipsetType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#X570> ;
                                                                                         :haveProcessorFamily <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#AMD_Ryzen_9_Desktop_Processors> ;
                                                                                         :haveSocket :AM4 ;
                                                                                         :supportMemoryType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#DDR4> ;
