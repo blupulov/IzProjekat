@@ -1,6 +1,7 @@
 package com.example.owl.controllers;
 
 import com.example.owl.dtos.CpuDto;
+import com.example.owl.dtos.RamDto;
 import com.example.owl.services.PointOneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,5 +29,10 @@ public class PointOneController {
     @GetMapping("/cpu/{mbName}/{mbBrand}")
     public ResponseEntity<List<CpuDto>> upgradeCPU(@PathVariable String mbBrand, @PathVariable String mbName) {
         return new ResponseEntity<>(pointOneService.upgradeCPU(mbName, mbBrand), HttpStatus.OK);
+    }
+
+    @GetMapping("/ram/{mbName}/{mbBrand}")
+    public ResponseEntity<List<RamDto>> upgradeRAM(@PathVariable String mbBrand, @PathVariable String mbName) {
+        return new ResponseEntity<>(pointOneService.upgradeRAM(mbName, mbBrand), HttpStatus.OK);
     }
 }

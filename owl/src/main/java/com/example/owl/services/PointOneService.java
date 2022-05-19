@@ -1,6 +1,7 @@
 package com.example.owl.services;
 
 import com.example.owl.dtos.CpuDto;
+import com.example.owl.dtos.RamDto;
 import org.apache.jena.query.QuerySolution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,22 @@ public class PointOneService {
         return processCPUResults(results);
     }
 
+    public List<RamDto> upgradeRAM(String mbName, String mbBrand) {
+        List<QuerySolution> results = service.executeQuery(makeUpgradeRAMQuery(mbName, mbBrand));
+        return processRAMResults(results);
+    }
+
+    private List<RamDto> processRAMResults(List<QuerySolution> results) {
+        List<RamDto> retVal = new ArrayList<>();
+        for (QuerySolution qs : results) {
+            String ram = qs.get("ram").asResource().getLocalName();
+            String brand = qs.get("rb").asResource().getLocalName();
+            String cap = qs.get("cap").asLiteral().getValue().toString();
+            retVal.add(new RamDto(ram, brand, cap));
+        }
+        return retVal;
+    }
+
     private List<CpuDto> processCPUResults(List<QuerySolution> results) {
         List<CpuDto> retVal = new ArrayList<>();
         for(QuerySolution qs : results) {
@@ -32,6 +49,19 @@ public class PointOneService {
             retVal.add(new CpuDto(cpu, mf, bf, cn));
         }
         return retVal;
+    }
+
+    private String makeUpgradeRAMQuery(String mbName, String mbBrand) {
+        return getPrefixes() +
+                "SELECT ?rb ?ram ?cap\n" +
+                "WHERE {\n" +
+                "	inst:"+mbName+" :haveBrand inst:"+mbBrand+" .\n"  +
+                "	inst:"+mbName+" :supportMemoryType ?mt .\n" +
+                "	?ram rdf:type :Memory . \n" +
+                "	?ram :haveInternalMemoryType ?mt .\n" +
+                "	?ram :haveBrand ?rb .\n" +
+                "	?ram :InternalMemoryCapacity ?cap .\n" +
+                "}\n";
     }
 
     private String makeUpgradeCPUQuery(String mbName, String mbBrand) {
