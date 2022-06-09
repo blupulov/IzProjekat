@@ -1,0 +1,86 @@
+
+FUNCTION_BLOCK purpose_analysis
+
+VAR_INPUT               // ulazne varijable
+	cpu_num : REAL;
+  mem_cap: REAL;
+  rws : REAL;
+  power : REAL;
+//  gpu_price : REAL;
+END_VAR
+
+VAR_OUTPUT              // izlazne varijable
+	purpose : REAL;
+END_VAR
+
+FUZZIFY cpu_num
+	TERM low := (2, 1) (4, 0);
+  TERM mid := (2, 0) (4, 1) (8, 0);
+  TERM high := (4, 0) (8, 1) (16, 0);
+  TERM ultra := (16, 0) (32, 1); 
+END_FUZZIFY
+
+FUZZIFY power
+	TERM low := (500, 1) (650, 0);
+  TERM mid := (600, 0) (650, 1) (750, 0);
+  TERM high := (650, 0) (750, 1) (1000, 0);
+END_FUZZIFY
+
+FUZZIFY rws
+	TERM low := (500, 1) (1000, 0);
+  TERM mid := (1000, 0) (2000, 1) (2600, 0);
+  TERM high := (2550, 0) (3000, 1);
+END_FUZZIFY
+
+FUZZIFY mem_cap
+	TERM low := (4, 1) (8, 0);
+  TERM mid := (4, 0) (8, 1) (12, 0);
+  TERM high := (8, 0) (12, 1) (16, 0);
+  TERM ultra := (16, 0) (128, 1);
+END_FUZZIFY
+
+DEFUZZIFY purpose
+	TERM home := (10,1) (30,0);
+  TERM business := (10, 0) (30, 1) (50, 0);
+  TERM gaming := (30 , 0) (50, 1) (70, 0);
+  TERM mining := (50, 0) (70, 1);
+
+	METHOD : COG;
+	DEFAULT := 0;
+END_DEFUZZIFY
+
+RULEBLOCK blok1
+	AND : MIN;
+	ACT : MIN;
+	ACCU : MAX;
+
+  //HOME
+	RULE 1 : IF cpu_num IS low AND mem_cap IS low AND power IS low AND rws IS low THEN purpose IS home;
+	
+  RULE 2 : IF cpu_num IS mid AND mem_cap IS low AND power IS low AND rws IS low THEN purpose IS home;
+  RULE 3 : IF cpu_num IS low AND mem_cap IS mid AND power IS low AND rws IS low THEN purpose IS home;
+  RULE 4 : IF cpu_num IS low AND mem_cap IS low AND power IS mid AND rws IS low THEN purpose IS home;
+  RULE 5 : IF cpu_num IS low AND mem_cap IS low AND power IS low AND rws IS mid THEN purpose IS home;
+	
+  RULE 6 : IF cpu_num IS mid AND mem_cap IS low AND power IS mid AND rws IS low THEN purpose IS home;
+  RULE 7 : IF cpu_num IS mid AND mem_cap IS low AND power IS low AND rws IS mid THEN purpose IS home;
+	RULE 8 : IF cpu_num IS mid AND mem_cap IS low AND power IS mid AND rws IS mid THEN purpose IS home;
+
+	RULE 9 : IF cpu_num IS low AND mem_cap IS mid AND power IS mid AND rws IS low THEN purpose IS home;
+	RULE 10 : IF cpu_num IS low AND mem_cap IS mid AND power IS low AND rws IS mid THEN purpose IS home;
+	RULE 11 : IF cpu_num IS low AND mem_cap IS mid AND power IS mid AND rws IS mid THEN purpose IS home;
+  //BUSINESS
+  RULE 12 : IF cpu_num IS mid AND mem_cap IS mid AND power IS low AND rws IS mid THEN purpose IS business;
+  RULE 13 : IF cpu_num IS mid AND mem_cap IS mid AND power IS mid AND rws IS low THEN purpose IS business;
+  RULE 14 : IF cpu_num IS mid AND mem_cap IS mid AND power IS mid AND rws IS mid THEN purpose IS business;
+  RULE 15 : IF cpu_num IS mid AND mem_cap IS mid AND power IS low AND rws IS low THEN purpose IS business;
+
+  RULE 16 : IF cpu_num IS mid AND mem_cap IS mid AND power IS mid AND rws IS high THEN purpose IS business;
+  RULE 17 : IF cpu_num IS mid AND mem_cap IS mid AND power IS low AND rws IS high THEN purpose IS business;
+  RULE 18 : IF cpu_num IS mid AND mem_cap IS mid AND power IS high AND rws IS mid THEN purpose IS business;
+  RULE 19 : IF cpu_num IS mid AND mem_cap IS mid AND power IS high AND rws IS low THEN purpose IS business;
+
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
+

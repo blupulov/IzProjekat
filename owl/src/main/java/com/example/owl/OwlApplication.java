@@ -1,6 +1,7 @@
 package com.example.owl;
 
 import com.example.owl.services.OWLService;
+import com.example.owl.services.PointTwoService;
 import org.apache.jena.base.Sys;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -11,6 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OwlApplication implements CommandLineRunner {
 	@Autowired
 	private OWLService service;
+	@Autowired
+	private PointTwoService pts;
 
 	public static void main(String[] args) {
 		SpringApplication.run(OwlApplication.class, args);
@@ -21,10 +24,11 @@ public class OwlApplication implements CommandLineRunner {
 		System.out.println("********************************************************************************");
 		System.out.println("********************************************************************************");
 		System.out.println("********************************************************************************");
-		String query = getQuery();
-		System.out.println(query);
+		pts.Test();
+		//String query = getQuery();
+		//System.out.println(query);
 		System.out.println("********************************************************************************");
-		service.executeTestQuery(query);
+		//service.executeTestQuery(query);
 	}
 
 	private String getQuery() {

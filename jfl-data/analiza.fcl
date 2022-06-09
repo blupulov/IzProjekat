@@ -1,0 +1,41 @@
+FUNCTION_BLOCK analiza_rizika	// Block definition (there may be more than one block per file)
+
+VAR_INPUT				// Define input variables
+	finansiranje : REAL;
+	broj_clanova_projekta : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	rizik : REAL;
+END_VAR
+
+FUZZIFY finansiranje
+	TERM malo := (0,1) (30,1) (50, 0) ;
+	TERM srednje := (30, 0) (50,1) (70,0);
+	TERM veliko := (50, 0) (70, 1) (100,1);
+END_FUZZIFY
+
+FUZZIFY broj_clanova_projekta
+	TERM mali := (0, 1) (40, 1) (70,0) ;
+	TERM veliki := (40,0) (70,1) (100, 1);
+END_FUZZIFY
+
+DEFUZZIFY rizik
+	TERM mali := (0,1) (30,1) (50,0);
+	TERM srednji := (30,0) (50,1) (70,0);
+	TERM veliki := (50,0) (70,1) (100,1);
+	METHOD : COG;		// Use 'Center Of Gravity' defuzzification method
+	DEFAULT := 0;		// Default value is 0 (if no rule activates defuzzifier)
+END_DEFUZZIFY
+
+RULEBLOCK No1
+	AND : MIN;			// Use 'min' for 'and' (also implicit use 'max' for 'or' to fulfill DeMorgan's Law)
+	ACT : MIN;			// Use 'min' activation method
+	ACCU : MAX;			// Use 'max' accumulation method
+
+	RULE 1 : IF finansiranje IS veliko OR broj_clanova_projekta IS mali THEN rizik IS mali;
+	RULE 2 : IF finansiranje IS srednje AND broj_clanova_projekta IS veliki THEN rizik IS srednji;
+	RULE 3 : IF finansiranje IS malo THEN rizik IS veliki;
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
