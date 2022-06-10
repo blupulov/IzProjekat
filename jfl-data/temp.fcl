@@ -20,6 +20,13 @@ FUZZIFY cpu_num
   TERM ultra := (16, 0) (32, 1); 
 END_FUZZIFY
 
+FUZZIFY mem_cap
+	TERM low := (4, 1) (8, 0);
+  TERM mid := (4, 0) (8, 1) (12, 0);
+  TERM high := (8, 0) (12, 1) (16, 0);
+  TERM ultra := (16, 0) (128, 1);
+END_FUZZIFY
+
 FUZZIFY power
 	TERM low := (500, 1) (650, 0);
   TERM mid := (600, 0) (650, 1) (750, 0);
@@ -32,12 +39,7 @@ FUZZIFY rws
   TERM high := (2550, 0) (3000, 1);
 END_FUZZIFY
 
-FUZZIFY mem_cap
-	TERM low := (4, 1) (8, 0);
-  TERM mid := (4, 0) (8, 1) (12, 0);
-  TERM high := (8, 0) (12, 1) (16, 0);
-  TERM ultra := (16, 0) (128, 1);
-END_FUZZIFY
+
 
 DEFUZZIFY purpose
 	TERM home := (10,1) (30,0);
@@ -79,6 +81,41 @@ RULEBLOCK blok1
   RULE 17 : IF cpu_num IS mid AND mem_cap IS mid AND power IS low AND rws IS high THEN purpose IS business;
   RULE 18 : IF cpu_num IS mid AND mem_cap IS mid AND power IS high AND rws IS mid THEN purpose IS business;
   RULE 19 : IF cpu_num IS mid AND mem_cap IS mid AND power IS high AND rws IS low THEN purpose IS business;
+
+  //GAMING 
+  RULE 20 : IF cpu_num IS high AND mem_cap IS mid AND power IS mid AND rws IS mid THEN purpose IS gaming;
+  RULE 21 : IF cpu_num IS high AND mem_cap IS mid AND power IS mid AND rws IS high THEN purpose IS gaming;
+  RULE 22 : IF cpu_num IS high AND mem_cap IS mid AND power IS high AND rws IS mid THEN purpose IS gaming;
+  RULE 23 : IF cpu_num IS high AND mem_cap IS mid AND power IS mid AND rws IS low THEN purpose IS gaming;
+
+  RULE 24 : IF cpu_num IS mid AND mem_cap IS high AND power IS mid AND rws IS mid THEN purpose IS gaming;
+  RULE 25 : IF cpu_num IS mid AND mem_cap IS high AND power IS mid AND rws IS high THEN purpose IS gaming;
+  RULE 26 : IF cpu_num IS mid AND mem_cap IS high AND power IS high AND rws IS mid THEN purpose IS gaming;
+  RULE 27 : IF cpu_num IS mid AND mem_cap IS high AND power IS mid AND rws IS low THEN purpose IS gaming;
+
+  RULE 28 : IF cpu_num IS high AND mem_cap IS mid AND power IS high AND rws IS low THEN purpose IS gaming;
+  RULE 29 : IF cpu_num IS mid AND mem_cap IS high AND power IS high AND rws IS low THEN purpose IS gaming;
+
+  RULE 30 : IF cpu_num IS high AND mem_cap IS high AND power IS mid AND rws IS mid THEN purpose IS gaming;
+  RULE 31 : IF cpu_num IS high AND mem_cap IS high AND power IS mid AND rws IS high THEN purpose IS gaming;
+  RULE 32 : IF cpu_num IS high AND mem_cap IS high AND power IS high AND rws IS mid THEN purpose IS gaming;
+  RULE 33 : IF cpu_num IS high AND mem_cap IS high AND power IS mid AND rws IS low THEN purpose IS gaming;
+  RULE 34 : IF cpu_num IS high AND mem_cap IS high AND power IS high AND rws IS high THEN purpose IS gaming;
+
+  RULE 35 : IF cpu_num IS ultra AND mem_cap IS high AND power IS mid AND rws IS mid THEN purpose IS gaming;
+  RULE 36 : IF cpu_num IS ultra AND mem_cap IS high AND power IS mid AND rws IS high THEN purpose IS gaming;
+  RULE 37 : IF cpu_num IS ultra AND mem_cap IS high AND power IS high AND rws IS mid THEN purpose IS gaming;
+  RULE 38 : IF cpu_num IS ultra AND mem_cap IS high AND power IS mid AND rws IS low THEN purpose IS gaming;
+  RULE 39 : IF cpu_num IS ultra AND mem_cap IS high AND power IS high AND rws IS high THEN purpose IS gaming;
+
+  RULE 40 : IF cpu_num IS high AND mem_cap IS ultra AND power IS mid AND rws IS mid THEN purpose IS gaming;
+  RULE 41 : IF cpu_num IS high AND mem_cap IS ultra AND power IS mid AND rws IS high THEN purpose IS gaming;
+  RULE 42 : IF cpu_num IS high AND mem_cap IS ultra AND power IS high AND rws IS mid THEN purpose IS gaming;
+  RULE 43 : IF cpu_num IS high AND mem_cap IS ultra AND power IS mid AND rws IS low THEN purpose IS gaming;
+  RULE 44 : IF cpu_num IS high AND mem_cap IS ultra AND power IS high AND rws IS high THEN purpose IS gaming;
+
+  //MINING
+  RULE 45 : IF cpu_num IS ultra AND mem_cap IS ultra AND power IS high AND rws IS high THEN purpose IS mining;
 
 END_RULEBLOCK
 
