@@ -544,6 +544,12 @@
                    rdfs:domain :HDD .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRWS
+:hddRWS rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :hddDataProperties ;
+        rdfs:range xsd:integer .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hdmiNumbers
 :hdmiNumbers rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :motherboardDataProperties ;
@@ -783,6 +789,12 @@
                    rdfs:domain :SSD .
 
 
+###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRWS
+:ssdRWS rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :ssdDataProperties ;
+        rdfs:range xsd:integer .
+
+
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#storageCapacity
 :storageCapacity rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:integer .
@@ -839,18 +851,6 @@
 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#3.5mmPortNumber> rdf:type owl:DatatypeProperty ;
                                                                                          rdfs:subPropertyOf :motherboardDataProperties ;
                                                                                          rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed> rdf:type owl:DatatypeProperty ;
-                                                                                            rdfs:subPropertyOf :hddDataProperties ;
-                                                                                            rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed
-<http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> rdf:type owl:DatatypeProperty ;
-                                                                                            rdfs:subPropertyOf :ssdDataProperties ;
-                                                                                            rdfs:range xsd:integer .
 
 
 #################################################################
@@ -1516,7 +1516,7 @@
                                                                                             :TBW 3120 ;
                                                                                             :price 33512 ;
                                                                                             :ssdCapacity 2048 ;
-                                                                                            <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 3480 ;
+                                                                                            :ssdRWS 3480 ;
                                                                                             rdfs:comment "bio je MP510 Force" .
 
 
@@ -1912,8 +1912,8 @@
                                                                                    :haveBrand <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#A-Data> ;
                                                                                    :haveInterfaceType <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#SATA_III> ;
                                                                                    :hddCapacity 512 ;
-                                                                                   :price 5000 ;
-                                                                                   <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#hddRead/WriteSpeed> 520 .
+                                                                                   :hddRWS 520 ;
+                                                                                   :price 5000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#HG9018
@@ -2018,7 +2018,7 @@
                                                                                  :TBW 600 ;
                                                                                  :price 28600 ;
                                                                                  :ssdCapacity 2048 ;
-                                                                                 <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 3500 .
+                                                                                 :ssdRWS 3500 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#KINGSTON
@@ -2700,7 +2700,7 @@
                                                                                     :TBW 240 ;
                                                                                     :price 13000 ;
                                                                                     :ssdCapacity 1024 ;
-                                                                                    <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 2100 ;
+                                                                                    :ssdRWS 2100 ;
                                                                                     rdfs:comment "bio je NV1" .
 
 
@@ -2728,7 +2728,7 @@
                                                                                            :TBW 350 ;
                                                                                            :price 7500 ;
                                                                                            :ssdCapacity 512 ;
-                                                                                           <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 560 .
+                                                                                           :ssdRWS 560 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#ST1000VX008_SkyHawk_Surveillance
@@ -2902,7 +2902,7 @@
                                                                                           :TBW 400 ;
                                                                                           :price 6490 ;
                                                                                           :ssdCapacity 250 ;
-                                                                                          <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 3000 .
+                                                                                          :ssdRWS 3000 .
 
 
 ###  http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-33#W-LED
@@ -2919,7 +2919,7 @@
                                                                                       :TBW 300 ;
                                                                                       :price 6100 ;
                                                                                       :ssdCapacity 500 ;
-                                                                                      <http://www.semanticweb.org/bojan/ontologies/2022/3/untitled-ontology-6#ssdRead/WriteSpeed> 3500 ;
+                                                                                      :ssdRWS 3500 ;
                                                                                       rdfs:comment "bio je SN570" .
 
 

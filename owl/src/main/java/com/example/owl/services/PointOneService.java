@@ -28,6 +28,47 @@ public class PointOneService {
         return processRAMResults(results);
     }
 
+    public int getCpuCoreNumbers(String cpuName) {
+        List<QuerySolution> results = service.executeQuery(makeCpuCoreNumbersQuery(cpuName));
+        for (QuerySolution qs : results){
+            return qs.get("cn").asLiteral().getInt();
+        }
+        return 0;
+    }
+
+    public int getMemCapacity(String memName) {
+        List<QuerySolution> results = service.executeQuery(makeMemCapacityQuery(memName));
+        for (QuerySolution qs : results){
+            return qs.get("mc").asLiteral().getInt();
+        }
+        return 0;
+    }
+
+    public int getPowerSupply(String power) {
+        List<QuerySolution> results = service.executeQuery(makePowerSupplyQuery(power));
+        for (QuerySolution qs : results){
+            return qs.get("ps").asLiteral().getInt();
+        }
+        return 0;
+    }
+
+    public int getHddRws(String hddName) {
+        List<QuerySolution> results = service.executeQuery(makeHDDStorageQuery(hddName));
+        for (QuerySolution qs : results){
+            return qs.get("rws").asLiteral().getInt();
+        }
+        return 0;
+    }
+
+    public int getSsdRws(String ssdName) {
+        List<QuerySolution> results = service.executeQuery(makeSSDStorageQuery(ssdName));
+        for (QuerySolution qs : results){
+            return qs.get("rws").asLiteral().getInt();
+        }
+        return 0;
+    }
+
+
     private List<RamDto> processRAMResults(List<QuerySolution> results) {
         List<RamDto> retVal = new ArrayList<>();
         for (QuerySolution qs : results) {
@@ -49,6 +90,46 @@ public class PointOneService {
             retVal.add(new CpuDto(cpu, mf, bf, cn));
         }
         return retVal;
+    }
+
+    private String makeCpuCoreNumbersQuery(String cpuName) {
+        return getPrefixes() +
+                "SELECT ?cn \n" +
+                "WHERE {\n" +
+                "	inst:"+cpuName+" :coresNumber ?cn .\n" +
+                "}\n";
+    }
+
+    private String makeMemCapacityQuery(String memName) {
+        return getPrefixes() +
+                "SELECT ?mc \n" +
+                "WHERE {\n" +
+                "	inst:"+memName+" :InternalMemoryCapacity ?mc .\n" +
+                "}\n";
+    }
+
+    private String makePowerSupplyQuery(String power) {
+        return getPrefixes() +
+                "SELECT ?ps \n" +
+                "WHERE {\n" +
+                "	inst:"+power+" :voltage ?ps .\n" +
+                "}\n";
+    }
+
+    private String makeSSDStorageQuery(String ssdName) {
+        return getPrefixes() +
+                "SELECT ?rws \n" +
+                "WHERE {\n" +
+                "	inst:"+ssdName+" :ssdRWS ?rws .\n" +
+                "}\n";
+    }
+
+    private String makeHDDStorageQuery(String hddName) {
+        return getPrefixes() +
+                "SELECT ?rws \n" +
+                "WHERE {\n" +
+                "	inst:"+hddName+" :hddRWS ?rws .\n" +
+                "}\n";
     }
 
     private String makeUpgradeRAMQuery(String mbName, String mbBrand) {

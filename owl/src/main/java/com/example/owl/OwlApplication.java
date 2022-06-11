@@ -24,7 +24,7 @@ public class OwlApplication implements CommandLineRunner {
 		System.out.println("********************************************************************************");
 		System.out.println("********************************************************************************");
 		System.out.println("********************************************************************************");
-		pts.Test();
+		//pts.Test();
 		//String query = getQuery();
 		//System.out.println(query);
 		System.out.println("********************************************************************************");
