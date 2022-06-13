@@ -1,0 +1,367 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     tree = "(C1,C2,C3,C4,C5,C6,C7,C8)";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node BSOD
+{
+     label = "C1";
+     position = (248 60);
+     states = ("yes" "no");
+}
+
+node RamDisconnected
+{
+     label = "C2";
+     position = (95 68);
+     states = ("yes" "no");
+}
+
+node CpuDisconnected
+{
+     label = "C3";
+     position = (212 0);
+     states = ("yes" "no");
+}
+
+node BiosProblem
+{
+     label = "C4";
+     position = (366 48);
+     states = ("yes" "no");
+}
+
+node FrozenScreen
+{
+     label = "C5";
+     position = (624 60);
+     states = ("yes" "no");
+}
+
+node Deadlock
+{
+     label = "C6";
+     position = (586 105);
+     states = ("yes" "no");
+}
+
+node StorageDisconnected
+{
+     label = "C7";
+     position = (671 119);
+     states = ("yes" "no");
+}
+
+node MonithorProblem
+{
+     label = "C8";
+     position = (748 63);
+     states = ("yes" "no");
+}
+
+node StrangeNoises
+{
+     label = "C1";
+     position = (120 195);
+     states = ("yes" "no");
+}
+
+node GPUProblem
+{
+     label = "C2";
+     position = (25 240);
+     states = ("yes" "no");
+}
+
+node HDDProblem
+{
+     label = "C3";
+     position = (163 249);
+     states = ("yes" "no");
+}
+
+node CoolerProblem
+{
+     label = "C4";
+     position = (51 139);
+     states = ("yes" "no");
+}
+
+node PowerSupplyProblem
+{
+     label = "C5";
+     position = (346 171);
+     states = ("yes" "no");
+}
+
+node ComputerWontStart
+{
+     label = "C6";
+     position = (590 195);
+     states = ("yes" "no");
+}
+
+node OSProblem
+{
+     label = "C7";
+     position = (611 268);
+     states = ("yes" "no");
+}
+
+node MotherboarProblem
+{
+     label = "C8";
+     position = (712 255);
+     states = ("yes" "no");
+}
+
+node SlowInternet
+{
+     label = "C9";
+     position = (939 68);
+     states = ("yes" "no");
+}
+
+node WeatherConditions
+{
+     label = "C10";
+     position = (907 13);
+     states = ("yes" "no");
+}
+
+node AntennaProblem
+{
+     label = "C11";
+     position = (1040 46);
+     states = ("yes" "no");
+}
+
+node CableProblems
+{
+     label = "C12";
+     position = (914 127);
+     states = ("yes" "no");
+}
+
+node NetworkCardProblems
+{
+     label = "C13";
+     position = (1025 106);
+     states = ("yes" "no");
+}
+
+node DysfunctionalUSBPort
+{
+     label = "C14";
+     position = (1073 278);
+     states = ("yes" "no");
+}
+
+node USBDriversProbem
+{
+     label = "C15";
+     position = (1229 346);
+     states = ("yes" "no");
+}
+
+node PinsProblem
+{
+     label = "C16";
+     position = (960 348);
+     states = ("yes" "no");
+}
+
+node DamagedEntrance
+{
+     label = "C17";
+     position = (1246 204);
+     states = ("yes" "no");
+}
+
+potential (BSOD | BiosProblem CpuDisconnected RamDisconnected)
+{
+ data = (((( 0.95 0.05 )
+( 0.85 0.15 ))
+(( 0.8 0.2 )
+( 0.5 0.5 )))
+((( 0.9 0.1 )
+( 0.4 0.6 ))
+(( 0.3 0.7 )
+( 0.05 0.95 ))));
+}
+
+potential (RamDisconnected)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (CpuDisconnected)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (BiosProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (FrozenScreen | MonithorProblem StorageDisconnected Deadlock)
+{
+ data = (((( 0.9 0.1 )
+( 0.5 0.5 ))
+(( 0.8 0.2 )
+( 0.3 0.7 )))
+((( 0.8 0.2 )
+( 0.35 0.65 ))
+(( 0.7 0.3 )
+( 0.05 0.95 ))));
+}
+
+potential (Deadlock)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (StorageDisconnected)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (MonithorProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (StrangeNoises | GPUProblem HDDProblem PowerSupplyProblem CoolerProblem)
+{
+ data = ((((( 0.95 0.05 )
+( 0.75 0.25 ))
+(( 0.7 0.3 )
+( 0.4 0.6 )))
+((( 0.75 0.25 )
+( 0.55 0.45 ))
+(( 0.65 0.35 )
+( 0.3 0.7 ))))
+(((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.6 0.4 )
+( 0.15 0.85 )))
+((( 0.5 0.5 )
+( 0.25 0.75 ))
+(( 0.35 0.65 )
+( 0.05 0.95 )))));
+}
+
+potential (GPUProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (HDDProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (CoolerProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (PowerSupplyProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (ComputerWontStart | PowerSupplyProblem MotherboarProblem OSProblem)
+{
+ data = (((( 0.9 0.1 )
+( 0.7 0.3 ))
+(( 0.9 0.1 )
+( 0.4 0.6 )))
+((( 0.75 0.25 )
+( 0.2 0.8 ))
+(( 0.5 0.5 )
+( 0.0 1.0 ))));
+}
+
+potential (OSProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (MotherboarProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (SlowInternet | NetworkCardProblems AntennaProblem WeatherConditions CableProblems)
+{
+ data = ((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.8 0.2 )
+( 0.7 0.3 ))
+(( 0.45 0.55 )
+( 0.35 0.65 ))))
+(((( 0.55 0.45 )
+( 0.3 0.7 ))
+(( 0.35 0.65 )
+( 0.25 0.75 )))
+((( 0.2 0.8 )
+( 0.1 0.9 ))
+(( 0.1 0.9 )
+( 0.05 0.95 )))));
+}
+
+potential (WeatherConditions)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (AntennaProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (CableProblems)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (NetworkCardProblems)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (DysfunctionalUSBPort | USBDriversProbem DamagedEntrance PinsProblem)
+{
+ data = (((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 0.25 0.75 )
+( 0.15 0.85 )))
+((( 0.85 0.15 )
+( 0.75 0.25 ))
+(( 0.15 0.85 )
+( 0.0 1.0 ))));
+}
+
+potential (USBDriversProbem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (PinsProblem)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (DamagedEntrance)
+{
+ data = ( 0.5 0.5 );
+}
+
