@@ -7,28 +7,228 @@ net
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";
 }
 
-node BSOD
+node BlueScreenofDeath
 {
      label = "C1";
-     position = (445 35);
+     position = (46 24);
      states = ("yes" "no");
 }
 
 node BSODSymptoms
 {
      label = "C1";
-     position = (425 195);
-     states = ("0verheating" "MbCpuDis" "MbRamDis" "BISO" "Drivers");
+     position = (62 138);
+     states = ("0verheating" "CPUDisconnected" "RAMDisconnect" "BIOS" "Drivers");
 }
 
-potential (BSOD)
+node JumpyMouse
+{
+     label = "C2";
+     position = (258 25);
+     states = ("yes" "no");
+}
+
+node JMSymptoms
+{
+     label = "C3";
+     position = (283 162);
+     states = ("Dirty Sensor" "Malfuctioning Sensor" "User dropped/hit the mouse");
+}
+
+node UnresponsiveMouseKeyboard
+{
+     label = "C1";
+     position = (420 23);
+     states = ("yes" "no");
+}
+
+node UMKSyptoms
+{
+     label = "C2";
+     position = (446 131);
+     states = ("Port Malfuction" "Outdated drivers" "Disconnected peripherals");
+}
+
+node FrozenScreen
+{
+     label = "C3";
+     position = (656 19);
+     states = ("yes" "no");
+}
+
+node FSSymptoms
+{
+     label = "C4";
+     position = (662 99);
+     states = ("Not enough memory" "Overheating" "Hardrive malfunction" "RAM malfuction" "Malware" "FaultyConnection");
+}
+
+node StrangeNoises
+{
+     label = "C5";
+     position = (834 21);
+     states = ("yes" "no");
+}
+
+node SNSypstoms
+{
+     label = "C6";
+     position = (834 133);
+     states = ("Built up dust" "Hard-Disk malfuction" "GraphicsCard Malfunction" "Coil whine");
+}
+
+node FaultyPowerSupply
+{
+     label = "C7";
+     position = (1013 30);
+     states = ("yes" "no");
+}
+
+node FPSSyptoms
+{
+     label = "C8";
+     position = (1031 135);
+     states = ("Power outages" "Dirt and smoke" "Overheating" "Capacitor" "Brownouts");
+}
+
+node SlowPc
+{
+     label = "C9";
+     position = (51 278);
+     states = ("yes" "no");
+}
+
+node SPCSymptoms
+{
+     label = "C10";
+     position = (40 371);
+     states = (" out of RAM" " out of disk space" "Drive malfuction" "CPU usage" "Outated drivers or updates" "Malware/Virus");
+}
+
+node Overheating
+{
+     label = "C11";
+     position = (244 281);
+     states = ("yes" "no");
+}
+
+node OSymptoms
+{
+     label = "C12";
+     position = (260 373);
+     states = ("CPU usage" "GPU usage" "Defective fans" "Blocked air vents" "Dust buildup" "Malware");
+}
+
+node PCRestartsRandomly
+{
+     label = "C13";
+     position = (1194 25);
+     states = ("yes" "no");
+}
+
+node PCRRSyptoms
+{
+     label = "C14";
+     position = (1206 134);
+     states = ("Faulty RAM" "Overheating" "Power supply issues" "Outdated BIOS" "GPU malfuctions" "Malware/Virus");
+}
+
+potential (BlueScreenofDeath)
 {
  data = ( 1.0 0.0 );
 }
 
-potential (BSODSymptoms | BSOD)
+potential (BSODSymptoms | BlueScreenofDeath)
 {
  data = (( 0.1 0.2 0.2 0.35 0.15 )
 ( 0.2 0.2 0.2 0.2 0.2 ));
+}
+
+potential (JumpyMouse)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (JMSymptoms | JumpyMouse)
+{
+ data = (( 0.4 0.25 0.35 )
+( 0.33 0.33 0.33 ));
+}
+
+potential (UnresponsiveMouseKeyboard)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (UMKSyptoms | UnresponsiveMouseKeyboard)
+{
+ data = (( 0.3 0.45 0.25 )
+( 0.33 0.33 0.33 ));
+}
+
+potential (FrozenScreen)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (FSSymptoms | FrozenScreen)
+{
+ data = (( 0.27 0.18 0.1 0.1 0.12 0.23 )
+( 16.6 16.6 16.6 16.6 16.6 16.6 ));
+}
+
+potential (StrangeNoises)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (SNSypstoms | StrangeNoises)
+{
+ data = (( 0.43 0.33 0.16 0.08 )
+( 0.25 0.25 0.25 0.25 ));
+}
+
+potential (FaultyPowerSupply)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (FPSSyptoms | FaultyPowerSupply)
+{
+ data = (( 0.3 0.25 0.18 0.15 0.12 )
+( 0.2 0.2 0.2 0.2 0.2 ));
+}
+
+potential (SlowPc)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (SPCSymptoms | SlowPc)
+{
+ data = (( 0.23 0.23 0.15 0.24 0.1 0.15 )
+( 0.33 0.33 0.33 0.33 0.33 0.33 ));
+}
+
+potential (Overheating)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (OSymptoms | Overheating)
+{
+ data = (( 0.2 0.2 0.15 0.15 0.22 0.08 )
+( 16.6 16.6 16.6 16.6 16.6 16.6 ));
+}
+
+potential (PCRestartsRandomly)
+{
+ data = ( 1.0 0.0 );
+}
+
+potential (PCRRSyptoms | PCRestartsRandomly)
+{
+ data = (( 0.13 0.27 0.15 0.05 0.25 0.15 )
+( 16.6 16.6 16.6 16.6 16.6 16.6 ));
 }
 
