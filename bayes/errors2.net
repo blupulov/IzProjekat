@@ -2,7 +2,7 @@ net
 {
      node_size = (0 0);
      name = "New BN";
-     tree = "(C1,C2,C3,C4,C5,C6,C7,C8)";
+     tree = "(C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17)";
      UnBBayes_Color_Probabilistic_Description = "-256";
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";
 }
@@ -24,7 +24,7 @@ node RamDisconnected
 node CpuDisconnected
 {
      label = "C3";
-     position = (212 0);
+     position = (176 116);
      states = ("yes" "no");
 }
 
@@ -112,7 +112,7 @@ node OSProblem
      states = ("yes" "no");
 }
 
-node MotherboarProblem
+node MotherboardProblem
 {
      label = "C8";
      position = (712 255);
@@ -157,28 +157,161 @@ node NetworkCardProblems
 node DysfunctionalUSBPort
 {
      label = "C14";
-     position = (1073 278);
+     position = (1232 222);
      states = ("yes" "no");
 }
 
 node USBDriversProbem
 {
      label = "C15";
-     position = (1229 346);
+     position = (1390 330);
      states = ("yes" "no");
 }
 
 node PinsProblem
 {
      label = "C16";
-     position = (960 348);
+     position = (1120 292);
      states = ("yes" "no");
 }
 
 node DamagedEntrance
 {
      label = "C17";
-     position = (1246 204);
+     position = (1406 148);
+     states = ("yes" "no");
+}
+
+node JumpyMouse
+{
+     label = "C1";
+     position = (164 370);
+     states = ("yes" "no");
+}
+
+node DirtBuildup
+{
+     label = "C2";
+     position = (23 424);
+     states = ("yes" "no");
+}
+
+node MalfuctioningSensor
+{
+     label = "C3";
+     position = (92 489);
+     states = ("yes" "no");
+}
+
+node UserDropped
+{
+     label = "C4";
+     position = (241 519);
+     states = ("yes " "no");
+}
+
+node KeyboardMalfuction
+{
+     label = "C5";
+     position = (426 358);
+     states = ("yes" "no");
+}
+
+node PortMalfuction
+{
+     label = "C6";
+     position = (396 482);
+     states = ("yes" "no");
+}
+
+node OutdatedDrivers
+{
+     label = "C7";
+     position = (503 478);
+     states = ("yes" "no");
+}
+
+node ConnectivityIssues
+{
+     label = "C8";
+     position = (319 414);
+     states = ("yes" "no");
+}
+
+node PhysicalDamage
+{
+     label = "C9";
+     position = (567 393);
+     states = ("yes" "no");
+}
+
+node NetworkConnectionProblems
+{
+     label = "C10";
+     position = (790 334);
+     states = ("yes" "no");
+}
+
+node CPUUsage
+{
+     label = "C11";
+     position = (719 449);
+     states = ("yes" "no");
+}
+
+node ConnectionIssues
+{
+     label = "C12";
+     position = (826 475);
+     states = ("yes" "no");
+}
+
+node MalfuctioningEquipment
+{
+     label = "C13";
+     position = (933 425);
+     states = ("yes" "no");
+}
+
+node FaultyPowerSupply
+{
+     label = "C14";
+     position = (1225 416);
+     states = ("yes" "no");
+}
+
+node PowerOutages
+{
+     label = "C15";
+     position = (1122 571);
+     states = ("yes" "no");
+}
+
+node DirtSmokeBuildup
+{
+     label = "C16";
+     position = (1189 624);
+     states = ("yes" "no");
+}
+
+node Overheating
+{
+     label = "C17";
+     position = (1286 632);
+     states = ("yes" "no");
+}
+
+node Capacitor
+{
+     label = "C18";
+     position = (1384 631);
+     states = ("yes" "no");
+}
+
+node Brownouts
+{
+     label = "C19";
+     position = (1409 552);
      states = ("yes" "no");
 }
 
@@ -276,7 +409,7 @@ potential (PowerSupplyProblem)
  data = ( 0.5 0.5 );
 }
 
-potential (ComputerWontStart | PowerSupplyProblem MotherboarProblem OSProblem)
+potential (ComputerWontStart | PowerSupplyProblem MotherboardProblem OSProblem)
 {
  data = (((( 0.9 0.1 )
 ( 0.7 0.3 ))
@@ -293,7 +426,7 @@ potential (OSProblem)
  data = ( 0.5 0.5 );
 }
 
-potential (MotherboarProblem)
+potential (MotherboardProblem)
 {
  data = ( 0.5 0.5 );
 }
@@ -361,6 +494,161 @@ potential (PinsProblem)
 }
 
 potential (DamagedEntrance)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (JumpyMouse | UserDropped MalfuctioningSensor DirtBuildup)
+{
+ data = (((( 1.0 0.0 )
+( 0.83 0.17 ))
+(( 0.85 0.15 )
+( 0.55 0.45 )))
+((( 0.9 0.1 )
+( 0.75 0.25 ))
+(( 0.6 0.4 )
+( 0.0 1.0 ))));
+}
+
+potential (DirtBuildup)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (MalfuctioningSensor)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (UserDropped)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (KeyboardMalfuction | PhysicalDamage ConnectivityIssues OutdatedDrivers PortMalfuction)
+{
+ data = ((((( 1.0 0.0 )
+( 0.92 0.08 ))
+(( 0.9 0.1 )
+( 0.89 0.11 )))
+((( 0.93 0.07 )
+( 0.74 0.26 ))
+(( 0.81 0.19 )
+( 0.4 0.6 ))))
+(((( 0.93 0.07 )
+( 0.75 0.25 ))
+(( 0.9 0.1 )
+( 0.6 0.4 )))
+((( 0.91 0.09 )
+( 0.3 0.7 ))
+(( 0.8 0.2 )
+( 0.0 1.0 )))));
+}
+
+potential (PortMalfuction)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (OutdatedDrivers)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (ConnectivityIssues)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (PhysicalDamage)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (NetworkConnectionProblems | ConnectionIssues MalfuctioningEquipment CPUUsage)
+{
+ data = (((( 1.0 0.0 )
+( 0.88 0.12 ))
+(( 0.77 0.23 )
+( 0.6 0.4 )))
+((( 0.77 0.23 )
+( 0.7 0.3 ))
+(( 0.2 0.8 )
+( 0.0 1.0 ))));
+}
+
+potential (CPUUsage)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (ConnectionIssues)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (MalfuctioningEquipment)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (FaultyPowerSupply | Brownouts Capacitor Overheating DirtSmokeBuildup PowerOutages)
+{
+ data = (((((( 1.0 0.0 )
+( 0.82 0.18 ))
+(( 0.83 0.17 )
+( 0.71 0.29 )))
+((( 0.79 0.21 )
+( 0.73 0.27 ))
+(( 0.8 0.2 )
+( 0.6 0.4 ))))
+(((( 0.9 0.1 )
+( 0.83 0.17 ))
+(( 0.77 0.23 )
+( 0.82 0.18 )))
+((( 0.89 0.11 )
+( 0.69 0.31 ))
+(( 0.85 0.15 )
+( 0.53 0.47 )))))
+((((( 0.88 0.12 )
+( 0.73 0.27 ))
+(( 0.7 0.3 )
+( 0.63 0.37 )))
+((( 0.83 0.17 )
+( 0.7 0.3 ))
+(( 0.55 0.45 )
+( 0.2 0.8 ))))
+(((( 0.87 0.13 )
+( 0.75 0.25 ))
+(( 0.78 0.22 )
+( 0.55 0.45 )))
+((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.61 0.39 )
+( 0.0 1.0 ))))));
+}
+
+potential (PowerOutages)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (DirtSmokeBuildup)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Overheating)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Capacitor)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Brownouts)
 {
  data = ( 0.5 0.5 );
 }
