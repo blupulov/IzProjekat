@@ -53,21 +53,27 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-
 		<dependency>
 			<groupId>net.sourceforge.jFuzzyLogic</groupId>
 			<artifactId>jFuzzyLogic</artifactId>
 			<scope>system</scope>
 			<version>2.1</version>
-
 			<systemPath>${project.basedir}/jFuzzyLogic.jar</systemPath>
-			<!--<systemPath>C:/Users/bojan/Downloads/jFuzzyLogic.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+			<groupId>local.jpf</groupId>
+			<artifactId>jpf-1.5</artifactId>
+			<scope>system</scope>
+			<version>1.5</version>
+			<systemPath>${project.basedir}/jpf-1.5.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>local.unbbyayes</groupId>
+			<artifactId>unbbayes-4.22.18</artifactId>
+			<scope>system</scope>
+			<version>4.22.18</version>
+			<systemPath>${project.basedir}/unbbayes-4.22.18.jar</systemPath>
 		</dependency>
 
     </dependencies>
