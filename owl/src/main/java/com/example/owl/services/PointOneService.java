@@ -1,7 +1,6 @@
 package com.example.owl.services;
 
-import com.example.owl.dtos.CpuDto;
-import com.example.owl.dtos.RamDto;
+import com.example.owl.dtos.*;
 import org.apache.jena.query.QuerySolution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -68,6 +67,74 @@ public class PointOneService {
         return 0;
     }
 
+    public List<CpuValidityDto> getAllCpus() {
+        List<QuerySolution> results = service.executeQuery(makeGetAllCpus());
+        List<CpuValidityDto> retVal = new ArrayList<>();
+        for (QuerySolution qs : results) {
+            String name = qs.get("name").asResource().getLocalName();
+            int cn = qs.get("cn").asLiteral().getInt();
+            retVal.add(new CpuValidityDto(name, cn));
+        }
+        return retVal;
+    }
+
+    public List<RamValidityDto> getAllRams() {
+        List<QuerySolution> results = service.executeQuery(makeGetAllRams());
+        List<RamValidityDto> retVal = new ArrayList<>();
+        for (QuerySolution qs : results) {
+            String name = qs.get("name").asResource().getLocalName();
+            int mc = qs.get("mc").asLiteral().getInt();
+            if(!name.equals(""))
+                retVal.add(new RamValidityDto(name, mc));
+        }
+        return retVal;
+    }
+
+    public List<PowerSupplyValidityDto> getAllPowerSupplies() {
+        List<QuerySolution> results = service.executeQuery(makeGetAllPowerSupplies());
+        List<PowerSupplyValidityDto> retVal = new ArrayList<>();
+        for (QuerySolution qs : results) {
+            String name = qs.get("name").asResource().getLocalName();
+            int v = qs.get("v").asLiteral().getInt();
+            if(!name.equals(""))
+                retVal.add(new PowerSupplyValidityDto(name, v));
+        }
+        return retVal;
+    }
+
+    public List<StorageValidityDto> getAllStorages() {
+        List<QuerySolution> result1 = service.executeQuery(makeGetAllHdd());
+        List<QuerySolution> result2 = service.executeQuery(makeGetAllSsd());
+
+        List<StorageValidityDto> retVal = new ArrayList<>();
+
+        for (QuerySolution qs : result1) {
+            String name = qs.get("name").asResource().getLocalName();
+            int rws = qs.get("rws").asLiteral().getInt();
+            if(!name.equals(""))
+                retVal.add(new StorageValidityDto(name, rws));
+        }
+
+        for (QuerySolution qs : result2) {
+            String name = qs.get("name").asResource().getLocalName();
+            int rws = qs.get("rws").asLiteral().getInt();
+            if(!name.equals(""))
+                retVal.add(new StorageValidityDto(name, rws));
+        }
+
+        return retVal;
+    }
+
+    public List<String> getAllMotherboards() {
+        List<QuerySolution> results = service.executeQuery(makeGetAllMotherboard());
+        List<String> retVal = new ArrayList<>();
+        for (QuerySolution qs : results) {
+            String name = qs.get("name").asResource().getLocalName();
+            if(!name.equals(""))
+                retVal.add(name);
+        }
+        return retVal;
+    }
 
     private List<RamDto> processRAMResults(List<QuerySolution> results) {
         List<RamDto> retVal = new ArrayList<>();
@@ -90,6 +157,59 @@ public class PointOneService {
             retVal.add(new CpuDto(cpu, mf, bf, cn));
         }
         return retVal;
+    }
+
+    private String makeGetAllCpus() {
+        return getPrefixes() +
+                "SELECT ?name ?cn \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :Processor .\n" +
+                "	?name :coresNumber ?cn .\n" +
+                "}\n";
+    }
+
+    private String makeGetAllPowerSupplies(){
+        return getPrefixes() +
+                "SELECT ?name ?v \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :PowerSupply .\n" +
+                "	?name :voltage ?v .\n" +
+                "}\n";
+    }
+
+    private String makeGetAllRams() {
+        return getPrefixes() +
+                "SELECT ?name ?mc \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :Memory .\n" +
+                "	?name :InternalMemoryCapacity ?mc .\n" +
+                "}\n";
+    }
+
+    private String makeGetAllHdd() {
+        return getPrefixes() +
+                "SELECT ?name ?rws \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :HDD .\n" +
+                "	?name :hddRWS ?rws .\n" +
+                "}\n";
+    }
+
+    private String makeGetAllSsd() {
+        return getPrefixes() +
+                "SELECT ?name ?rws \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :SSD .\n" +
+                "	?name :ssdRWS ?rws .\n" +
+                "}\n";
+    }
+
+    private String makeGetAllMotherboard() {
+        return getPrefixes() +
+                "SELECT ?name \n" +
+                "WHERE {\n" +
+                "	?name rdf:type :Motherboard .\n" +
+                "}\n";
     }
 
     private String makeCpuCoreNumbersQuery(String cpuName) {

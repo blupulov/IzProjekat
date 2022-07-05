@@ -6,7 +6,6 @@ VAR_INPUT               // ulazne varijable
   mem_cap: REAL;
   rws : REAL;
   power : REAL;
-//  gpu_price : REAL;
 END_VAR
 
 VAR_OUTPUT              // izlazne varijable
@@ -22,7 +21,7 @@ END_FUZZIFY
 
 FUZZIFY mem_cap
 	TERM low := (4, 1) (8, 0);
-  TERM mid := (4, 0) (8, 1) (12, 0);
+  TERM mid := (6, 0) (8, 1) (10, 0);
   TERM high := (8, 0) (12, 1) (16, 0);
   TERM ultra := (16, 0) (128, 1);
 END_FUZZIFY
@@ -38,8 +37,6 @@ FUZZIFY rws
   TERM mid := (1000, 0) (2000, 1) (2600, 0);
   TERM high := (2550, 0) (3000, 1);
 END_FUZZIFY
-
-
 
 DEFUZZIFY purpose
 	TERM home := (10,1) (30,0);
@@ -117,6 +114,16 @@ RULEBLOCK blok1
   //MINING
   RULE 45 : IF cpu_num IS ultra AND mem_cap IS ultra AND power IS high AND rws IS high THEN purpose IS mining;
 
+  //NAKON KT
+  RULE 46 : IF cpu_num IS low THEN purpose IS home;
+  RULE 47 : IF cpu_num IS mid THEN purpose IS business;
+  RULE 48 : IF cpu_num IS high THEN purpose IS gaming;
+
+  RULE 49 : IF mem_cap IS low THEN purpose IS home;
+  RULE 50 : IF mem_cap IS mid THEN purpose IS business;
+  RULE 51 : IF mem_cap IS ultra THEN purpose IS gaming;
+
+  
 END_RULEBLOCK
 
 END_FUNCTION_BLOCK

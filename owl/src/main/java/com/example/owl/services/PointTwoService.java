@@ -62,8 +62,17 @@ public class PointTwoService {
 
         dto.setHomePC(100 - (Math.abs(10 - result)/result) * 100);
         dto.setBusinessPC(100 - (Math.abs(30 - result)/result) * 100);
-        dto.setGamingPC(100 - (Math.abs(50 - result)/result) * 100);
+        dto.setGamingPC((100 - (Math.abs(50 - result)/result) * 100));
         dto.setMiningPC(100 - (Math.abs(70 - result)/result) * 100);
+
+        if(dto.getHomePC() < 0)
+            dto.setHomePC(0);
+        if(dto.getBusinessPC() < 0)
+            dto.setBusinessPC(0);
+        if(dto.getGamingPC() < 0)
+            dto.setGamingPC(0);
+        if(dto.getMiningPC() < 0)
+            dto.setMiningPC(0);
         return dto;
     }
 

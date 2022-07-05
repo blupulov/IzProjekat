@@ -1,7 +1,6 @@
 package com.example.owl.controllers;
 
-import com.example.owl.dtos.CpuDto;
-import com.example.owl.dtos.RamDto;
+import com.example.owl.dtos.*;
 import com.example.owl.services.PointOneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,4 +34,30 @@ public class PointOneController {
     public ResponseEntity<List<RamDto>> upgradeRAM(@PathVariable String mbBrand, @PathVariable String mbName) {
         return new ResponseEntity<>(pointOneService.upgradeRAM(mbName, mbBrand), HttpStatus.OK);
     }
+
+    @GetMapping("/cpu")
+    public ResponseEntity<List<CpuValidityDto>> getAllCpus() {
+        return new ResponseEntity<>(pointOneService.getAllCpus(), HttpStatus.OK);
+    }
+
+    @GetMapping("/ram")
+    public ResponseEntity<List<RamValidityDto>> getAllRams() {
+        return new ResponseEntity<>(pointOneService.getAllRams(), HttpStatus.OK);
+    }
+
+    @GetMapping("/powerSupply")
+    public ResponseEntity<List<PowerSupplyValidityDto>> getAllPowerSupplies() {
+        return new ResponseEntity<>(pointOneService.getAllPowerSupplies(), HttpStatus.OK);
+    }
+
+    @GetMapping("/storage")
+    public ResponseEntity<List<StorageValidityDto>> getAllStorages() {
+        return new ResponseEntity<>(pointOneService.getAllStorages(), HttpStatus.OK);
+    }
+
+    @GetMapping("/motherboard")
+    public ResponseEntity<List<String>> getAllMotherboards() {
+        return new ResponseEntity<>(pointOneService.getAllMotherboards(), HttpStatus.OK);
+    }
+
 }
