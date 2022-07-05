@@ -1,0 +1,68 @@
+<div class="container">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <!--CPU-->
+    <div class="col-md-8">
+      <label for="inputState1" class="form-label">CPU</label>
+      <select name="corsNum" id="inputState1" class="form-select" [(ngModel)]="data.corsNum">
+        <option *ngFor="let c of cpus" [value]="c.corsNum">
+          Cpu name: {{ c.cpuName }};    Cors number: {{ c.corsNum}} 
+        </option>
+      </select>
+    </div>
+    <!--RAM-->
+    <div class="col-md-8">
+      <label for="inputState2" class="form-label">RAM</label>
+      <select name="corsNum" id="inputState2" class="form-select" [(ngModel)]="data.memory">
+        <option *ngFor="let c of rams" [value]="c.ramCap">
+          Ram name: {{ c.ramName }};    Ram capacity: {{ c.ramCap}} 
+        </option>
+      </select>
+    </div>
+    <!--STORAGE-->
+    <div class="col-md-8">
+      <label for="inputState3" class="form-label">Storage</label>
+      <select name="corsNum" id="inputState3" class="form-select" [(ngModel)]="data.rws">
+        <option *ngFor="let c of storages" [value]="c.rws">
+          Storage name: {{ c.storageName }};   RWS: {{ c.rws}} 
+        </option>
+      </select>
+    </div>
+    <!--POWER SUPPLIES-->
+    <div class="col-md-8">
+      <label for="inputState4" class="form-label">Power supply</label>
+      <select name="corsNum" id="inputState4" class="form-select" [(ngModel)]="data.power">
+        <option *ngFor="let c of ps" [value]="c.power">
+          Power supply name: {{ c.powerSupplyName }};   Power: {{ c.power}} 
+        </option>
+      </select>
+    </div>
+    <div class="col-md-8">
+      <button type="submit" class="btn btn-success">SUBMIT</button>
+    </div>
+  </form>
+
+  <mat-divider></mat-divider>
+
+  <div class="col-md-8">
+    
+    <h1>RESULTS: </h1>
+    <table>
+      <tr>
+        <td>Home: </td>
+        <td>{{ type.homePC | number }} %</td>
+      </tr>
+      <tr>
+        <td>Business: </td>
+        <td>{{ type.businessPC | number }} %</td>
+      </tr>
+      <tr>
+        <td>Gaming: </td>
+        <td>{{ type.gamingPC | number }} %</td>
+      </tr>
+      <tr>
+        <td>Mining: </td>
+        <td>{{ type.miningPC | number }} %</td>
+      </tr>
+    </table>
+  </div>
+</div>
