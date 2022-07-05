@@ -142,7 +142,8 @@ public class PointOneService {
             String ram = qs.get("ram").asResource().getLocalName();
             String brand = qs.get("rb").asResource().getLocalName();
             String cap = qs.get("cap").asLiteral().getValue().toString();
-            retVal.add(new RamDto(ram, brand, cap));
+            if(!ram.equals(""))
+                retVal.add(new RamDto(ram, brand, cap));
         }
         return retVal;
     }
@@ -256,7 +257,7 @@ public class PointOneService {
         return getPrefixes() +
                 "SELECT ?rb ?ram ?cap\n" +
                 "WHERE {\n" +
-                "	inst:"+mbName+" :haveBrand inst:"+mbBrand+" .\n"  +
+                //"	inst:"+mbName+" :haveBrand inst:"+mbBrand+" .\n"  +
                 "	inst:"+mbName+" :supportMemoryType ?mt .\n" +
                 "	?ram rdf:type :Memory . \n" +
                 "	?ram :haveInternalMemoryType ?mt .\n" +
@@ -269,7 +270,7 @@ public class PointOneService {
         return getPrefixes() +
                 "SELECT ?proc ?mf ?bf ?cn\n" +
                 "WHERE {\n" +
-                "	inst:"+mbName+" :haveBrand inst:"+mbBrand+" .\n"  +
+                //"	inst:"+mbName+" :haveBrand inst:"+mbBrand+" .\n"  +
                 "	inst:"+mbName+" :haveChipsetType ?ct .\n" +
                 "	inst:"+mbName+" :haveSocket ?s . \n" +
                 "	?proc rdf:type :Processor .\n" +

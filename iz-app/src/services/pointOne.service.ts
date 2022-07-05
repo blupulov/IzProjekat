@@ -31,4 +31,11 @@ export class PointOneService {
   getAllMotherboards() {
     return this.http.get<any>(this.apiUrl + '/motherboard')
   }
+
+  upgrade(mbName: string, upgrade: string) {
+    if(upgrade == 'ram')
+      return this.http.get<any>(this.apiUrl + '/ram/' + mbName + '/' + 'a')
+    else
+      return this.http.get<any>(this.apiUrl + '/cpu/' + mbName + '/' + 'a')
+  }
 }

@@ -1,1 +1,69 @@
-<p>point-one works!</p>
+<div class="container">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <!--MOTHERBOARDS-->
+    <div class="col-md-8">
+      <label for="inputState1" class="form-label">MOTHERBOARDS</label>
+      <select name="mb" id="inputState1" class="form-select" [(ngModel)]="mbName">
+        <option *ngFor="let m of motherboards" [value]="m">{{ m }}</option>
+      </select>
+    </div>
+
+    <!--UPGRADE-->
+    <div class="col-md-8">
+      <label for="inputState1" class="form-label">WHAT YOU WAT TO UPGRADE</label>
+      <select name="upgrade" id="inputState1" class="form-select" [(ngModel)]="upgrade" (change)="onChange()">
+        <option value="cpu">CPU</option>
+        <option value="ram">RAM</option>
+      </select>
+    </div>
+
+    <!--Button-->
+    <div class="col-md-8">
+      <button type="submit" class="btn btn-success">SUBMIT</button>
+    </div>
+  </form>
+
+  <!--CPU SELECTED-->
+  <div *ngIf="upgrade == 'cpu'">
+    <mat-divider></mat-divider>
+    <h1>CPU RESULTS</h1>
+    <table class="table">
+      <thead>
+        <th>CPU NAME</th>
+        <th>CPU MAIN FREQUENCY</th>
+        <th>CPU BOOST FREQUENCY</th>
+        <th>CPU CORS NUMBERS</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of results">
+          <td> {{c.name}} </td>
+          <td> {{c.mf}} </td>
+          <td> {{c.bf}} </td>
+          <td> {{c.cn}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--RAM SELECTED-->
+  <div *ngIf="upgrade == 'ram'">
+    <mat-divider></mat-divider>
+    <h1>RAM RESULTS</h1>
+    <table class="table">
+      <thead>
+        <th>RAM NAME</th>
+        <th>RAM BRAND</th>
+        <th>RAM CAPACITY</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of results">
+          <td>{{r.name}}</td>
+          <td>{{r.brand}}</td>
+          <td>{{r.cap}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+</div>
