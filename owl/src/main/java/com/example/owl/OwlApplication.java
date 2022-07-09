@@ -1,10 +1,7 @@
 package com.example.owl;
 
 import com.example.owl.dtos.ComputerTypeDTO;
-import com.example.owl.services.OWLService;
-import com.example.owl.services.PointOneService;
-import com.example.owl.services.PointThreeService;
-import com.example.owl.services.PointTwoService;
+import com.example.owl.services.*;
 import org.apache.jena.base.Sys;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,6 +18,8 @@ public class OwlApplication implements CommandLineRunner {
 	private PointTwoService p2s;
 	@Autowired
 	private PointThreeService p3s;
+	@Autowired
+	private PointFourService p4s;
 
 	public static void main(String[] args) {
 		SpringApplication.run(OwlApplication.class, args);
@@ -46,5 +45,7 @@ public class OwlApplication implements CommandLineRunner {
 		//System.out.println("m: " + dto.getMiningPC());
 
 		//p1s.getAllMotherboards().forEach(System.out::println);
+
+		//p4s.test();
 	}
 }

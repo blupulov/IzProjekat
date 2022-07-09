@@ -1,0 +1,5 @@
+corsNumber=12,cpuFrequency=3.6,cpuCache=25,cpuBrand=INTEL,cpuName=Core i7 12700K,ramType=DDR4,ramCapacity=24,ramFrequency=3200,storageType=SSD,rws=2500,storageCapacity=1024
+corsNumber=8,cpuFrequency=3.6,cpuCache=16,cpuBrand=INTEL,cpuName=Core i7 11700K,ramType=DDR4,ramCapacity=16,ramFrequency=2800,storageType=SSD,rws=2500,storageCapacity=500
+corsNumber=10,cpuFrequency=3.7,cpuCache=20,cpuBrand=INTEL,cpuName=Core i5 12600K,ramType=DDR4,ramCapacity=16,ramFrequency=3200,storageType=SSD,rws=2000,storageCapacity=1024
+corsNumber=8,cpuFrequency=2.9,cpuCache=16,cpuBrand=INTEL,cpuName=Core i7 10700F,ramType=DDR4,ramCapacity=12,ramFrequency=2800,storageType=SSD,rws=2500,storageCapacity=500
+corsNumber=8,cpuFrequency=3.4,cpuCache=32,cpuBrand=AMD,cpuName=Ryzen 7 5700X,ramType=DDR4,ramCapacity=16,ramFrequency=2800,storageType=SSD,rws=2000,storageCapacity=1024

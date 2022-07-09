@@ -76,6 +76,21 @@
 			<systemPath>${project.basedir}/unbbayes-4.22.18.jar</systemPath>
 		</dependency>
 
+		<dependency>
+			<groupId>local.jcolibri</groupId>
+			<artifactId>jCOLIBRI-3.0</artifactId>
+			<scope>system</scope>
+			<version>3.0</version>
+			<systemPath>${project.basedir}/jCOLIBRI-3.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>local.log4j</groupId>
+			<artifactId>log4j-api-2.11.1</artifactId>
+			<scope>system</scope>
+			<version>2.11.1</version>
+			<systemPath>${project.basedir}/log4j-api-2.11.1.jar</systemPath>
+		</dependency>
+
     </dependencies>
 
 	<build>
