@@ -1,5 +1,5 @@
-corsNumber=12,cpuFrequency=3.6,cpuCache=25,cpuBrand=INTEL,cpuName=Core i7 12700K,ramType=DDR4,ramCapacity=24,ramFrequency=3200,storageType=SSD,rws=2500,storageCapacity=1024
-corsNumber=8,cpuFrequency=3.6,cpuCache=16,cpuBrand=INTEL,cpuName=Core i7 11700K,ramType=DDR4,ramCapacity=16,ramFrequency=2800,storageType=SSD,rws=2500,storageCapacity=500
-corsNumber=10,cpuFrequency=3.7,cpuCache=20,cpuBrand=INTEL,cpuName=Core i5 12600K,ramType=DDR4,ramCapacity=16,ramFrequency=3200,storageType=SSD,rws=2000,storageCapacity=1024
-corsNumber=8,cpuFrequency=2.9,cpuCache=16,cpuBrand=INTEL,cpuName=Core i7 10700F,ramType=DDR4,ramCapacity=12,ramFrequency=2800,storageType=SSD,rws=2500,storageCapacity=500
-corsNumber=8,cpuFrequency=3.4,cpuCache=32,cpuBrand=AMD,cpuName=Ryzen 7 5700X,ramType=DDR4,ramCapacity=16,ramFrequency=2800,storageType=SSD,rws=2000,storageCapacity=1024
+corsNumber=4,cpuFrequency=3.7,cpuCache=8,cpuBrand=INTEL,cpuName=Core i3 10105,ramType=DDR4,ramCapacity=8,ramFrequency=2100,storageType=SSD,rws=1000,storageCapacity=320
+corsNumber=6,cpuFrequency=2.9,cpuCache=12,cpuBrand=INTEL,cpuName=Core i5 10400F,ramType=DDR4,ramCapacity=8,ramFrequency=2400,storageType=HDD,rws=600,storageCapacity=2048
+corsNumber=2,cpuFrequency=4.0,cpuCache=4,cpuBrand=INTEL,cpuName=Pentium Gold G6400,ramType=DDR4,ramCapacity=4,ramFrequency=2100,storageType=HDD,rws=600,storageCapacity=1024
+corsNumber=2,cpuFrequency=3.4,cpuCache=4,cpuBrand=INTEL,cpuName=Celeron G6900,ramType=DDR4,ramCapacity=4,ramFrequency=2100,storageType=HDD,rws=520,storageCapacity=500
+corsNumber=4,cpuFrequency=3.8,cpuCache=4,cpuBrand=AMD,cpuName=Ryzen 3 4100,ramType=DDR4,ramCapacity=4,ramFrequency=2100,storageType=HDD,rws=550,storageCapacity=500

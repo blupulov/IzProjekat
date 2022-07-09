@@ -1,1 +1,117 @@
-<p>point-four works!</p>
+<div class="container">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <!--CPU BRAND-->
+    <div class="col-md-8">
+      <label for="inputState1" class="form-label">CPU BRAND</label>
+      <select name="cb" id="inputState1" class="form-select" [(ngModel)]="cb">
+        <option value="INTEL">INTEL</option>
+        <option value="AMD">AMD</option>
+      </select>
+    </div>
+
+    <!--CPU FREQ-->
+    <div class="col-md-8">
+      <label for="inputState21" class="form-label">CPU FREQUENCY (ghz)</label>
+      <input type="number" name="cf" id="inputState21" class="form-control" [(ngModel)]="cf">
+    </div>
+
+    <!--CPU CORS NUM-->
+    <div class="col-md-8">
+      <label for="inputState22" class="form-label">CPU CORS NUMBER</label>
+      <input type="number" name="cn" id="inputState22" class="form-control" [(ngModel)]="cn">
+    </div>
+
+    <!--CPU CACHE-->
+    <div class="col-md-8">
+      <label for="inputState23" class="form-label">CPU CACHE MEMORY (mb)</label>
+      <input type="number" name="cc" id="inputState23" class="form-control" [(ngModel)]="cc">
+    </div>
+
+    <hr/>
+
+    <!--RAM TYPE-->
+    <div class="col-md-8">
+      <label for="inputState2" class="form-label">RAM MEMORY TYPE</label>
+      <select name="rt" id="inputState2" class="form-select" [(ngModel)]="rt">
+        <option value="DDR4">DDR4</option>
+        <option value="DDR5">DDR5</option>
+      </select>
+    </div>
+
+    <!--RAM FREQ-->
+    <div class="col-md-8">
+      <label for="inputState32" class="form-label">RAM FREQUENCY (mhz)</label>
+      <input type="number" name="rf" id="inputState32" class="form-control" [(ngModel)]="rf">
+    </div>
+
+    <!--RAM CAP-->
+    <div class="col-md-8">
+      <label for="inputState33" class="form-label">RAM CAPACITY (gb)</label>
+      <input type="number" name="rc" id="inputState33" class="form-control" [(ngModel)]="rc">
+    </div>
+
+    <hr/>
+
+    <!--STORAGE TYPE-->
+    <div class="col-md-8">
+      <label for="inputState3" class="form-label">STORAGE TYPE</label>
+      <select name="st" id="inputState3" class="form-select" [(ngModel)]="st">
+        <option value="HDD">HDD</option>
+        <option value="SSD">SSD</option>
+      </select>
+    </div>
+
+    <!--RWS-->
+    <div class="col-md-8">
+      <label for="inputState10" class="form-label">RWS (kb/s)</label>
+      <input type="number" name="rws" id="inputState10" class="form-control" [(ngModel)]="rws">
+    </div>
+
+    <!--STORAGE CAPACITY-->
+    <div class="col-md-8">
+      <label for="inputState11" class="form-label">STORAGE CAPACITY (gb)</label>
+      <input type="number" name="sc" id="inputState11" class="form-control" [(ngModel)]="sc">
+    </div>
+
+    <!--Button-->
+    <div class="col-md-8">
+      <button type="submit" class="btn btn-success">SUBMIT</button>
+    </div>
+  </form>
+
+  <mat-divider></mat-divider>
+  <div>
+    <h1>SIMILAR PC-s</h1>
+    <table class="table">
+      <thead>
+        <th>CPU NAME</th>
+        <th>CPU BRAND</th>
+        <th>CPU FREQUENCY</th>
+        <th>CPU CACHE</th>
+        <th>CPU CORS</th>
+        <th>RAM TYPE</th>
+        <th>RAM FREQUENCY</th>
+        <th>RAM CAPACITY</th>
+        <th>STORAGE TYPE</th>
+        <th>RWS</th>
+        <th>STORAGE CAPACITY</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pc of similarComps">
+          <td> {{ pc.cpuName }} </td>
+          <td> {{ pc.cpuBrand }} </td>
+          <td> {{ pc.cpuFrequency }} ghz</td>
+          <td> {{ pc.cpuCache }} mb</td>
+          <td> {{ pc.corsNumber }} </td>
+          <td> {{ pc.ramType }} </td>
+          <td> {{ pc.ramFrequency }} mhz</td>
+          <td> {{ pc.ramCapacity }} gb</td>
+          <td> {{ pc.storageType }} </td>
+          <td> {{ pc.rws }} kb/s</td>
+          <td> {{ pc.storageCapacity }} gb</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
