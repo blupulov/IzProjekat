@@ -1,0 +1,49 @@
+.banner-container {
+    background-image: url(../../../images/tech.jpg);
+    background-size: 132%;
+    height: 100%; }
+    
+    @media screen and (max-width:100%) {
+      .banner-container {
+        background-size: auto; } }
+    @media screen and (max-width: 100%) {
+      .banner-container {
+        height: 400px; } }
+    .banner-container .slider-det {
+      text-align: center;
+      padding-top: 5%;
+      color: #fff }
+      @media screen and (max-width: 200%) {
+        .banner-container .slider-det {
+          padding-top: 10%;
+          padding-left: 5%;
+          width: 150%; } }
+      .banner-container .slider-det span {
+        text-transform: uppercase;
+        font-size: 1.4rem; }
+        .banner-container .slider-det .parent {
+            width: 100%;
+        }
+      .banner-container .slider-det h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 4rem; }
+      .banner-container .slider-det p {
+        font-size: 2rem; }
+      .banner-container .slider-det .carousel-indicators {
+        bottom: -51px; }
+      @media screen and (max-width: 600px) {
+        .banner-container .slider-det .carousel-control-prev-icon {
+          margin-left: -110px; }
+        .banner-container .slider-det .carousel-control-next-icon {
+          margin-right: -110px; } }
+.parent {
+    background: rgb(0, 0, 0);/* Fallback color */
+    background: rgba(0, 0, 0, 0.1);/* Black background with opacity */
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: medium solid transparent;
+    
+    
+}
