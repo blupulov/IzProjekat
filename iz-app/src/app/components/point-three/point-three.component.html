@@ -1,1 +1,29 @@
-<p>point-three works!</p>
+<div class="container">
+    <form #form="ngForm" (submit)="onSubmit()">
+        <div class="col-md-8">
+            <label  class="form-label">Enter the problem that you have with your computer</label>
+            <input type="string" name="input"  class="form-control" [(ngModel)]="input">
+        </div>
+
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+        </div> 
+    </form>
+    <mat-divider></mat-divider>
+    <div>
+        <h1>Possible problems and their probabilities</h1>
+        <table class="table">
+        <thead>
+            <th>Problem name</th>
+            <th>Possibility</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let problem of probabilities">
+                <td> {{ problem.nodeName }} </td>
+                <td> {{ problem.probability}} </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+</div>
